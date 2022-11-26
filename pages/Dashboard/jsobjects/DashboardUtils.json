@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "DashboardUtils",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tisCurrentPage: (page) => {\n\t\tif(appsmith.store.page === page) return true;\n\t\treturn false;\n\t},\n\t\n\tsetCurrentPage: (page) => {\n\t\tstoreValue('page', page);\n\t\tnavigateTo(page);\n\t},\n\t\n\tfetchData: () => {\n\t\treturn JSON.parse(\"{\n   \\\"banks\\\":[\n      {\n         \\\"merchants\\\":[\n            {\n               \\\"x\\\":\\\"AU\\\",\n               \\\"y\\\":50\n            },\n            {\n               \\\"x\\\":\\\"BOB\\\",\n               \\\"y\\\":100\n            },\n            {\n               \\\"x\\\":\\\"Canara\\\",\n               \\\"y\\\":70\n            },\n            {\n               \\\"x\\\":\\\"DBS\\\",\n               \\\"y\\\":80\n            },\n            {\n               \\\"x\\\":\\\"Federal\\\",\n               \\\"y\\\":40\n            },\n            {\n               \\\"x\\\":\\\"Imobile\\\",\n               \\\"y\\\":30\n            },\n            {\n               \\\"x\\\":\\\"IndusInd\\\",\n               \\\"y\\\":100\n            },\n            {\n               \\\"x\\\":\\\"Instabiz\\\",\n               \\\"y\\\":120\n            },\n            {\n               \\\"x\\\":\\\"KVB\\\",\n               \\\"y\\\":40\n            },\n            {\n               \\\"x\\\":\\\"SBI\\\",\n               \\\"y\\\":70\n            }\n         ]\n      }\n   ]\n}\");\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Dashboard_DashboardUtils",
+  "deleted": false,
+  "gitSyncId": "638197a1d133c97eea26ace5_638197a2d133c97eea26ad1c"
+}

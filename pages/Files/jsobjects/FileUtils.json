@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "FileUtils",
+    "pageId": "Files",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tisCurrentPage: (page) => {\n\t\tif(appsmith.store.page === page) return true;\n\t\treturn false;\n\t},\n\t\n\tsetCurrentPage: (page) => {\n\t\tstoreValue('page', page);\n\t\tnavigateTo(page);\n\t},\n\t\n\tfetchFile: () => {\n\t\tswitch(tab_file_types.selectedTab) {\n\t\t\tcase 'Bank Payment Data':\n\t\t\t\tfetch_files.run();\n\t\t\t\tbreak;\n\t\t\tcase 'Bank Refund Data':\n\t\t\t\tfetch_bank_refund_files.run();\n\t\t\t\tbreak;\n\t\t\tcase 'Merchant Order Data':\n\t\t\t\tbreak;\n\t\t}\n\t},\n\t\n\tdownloadFile: (fileUid) => {\n\t\tstoreValue('fileUid', fileUid);\n\t\tdownload_file.run();\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Files_FileUtils",
+  "deleted": false,
+  "gitSyncId": "638197a1d133c97eea26ace5_638197a2d133c97eea26ad37"
+}

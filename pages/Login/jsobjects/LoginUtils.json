@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "LoginUtils",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tauthenticate: () => {\n\t\tlogin.run(\n\t\t\t() => {\n\t\t\t\tstoreValue('username', login.data.email, true);\n\t\t\t\tstoreValue('access_token', login.data.accessToken, true);\n\t\t\t\tstoreValue('api_server', 'https://preprod-az.gonuclei.com/api');\n\t\t\t\tnavigateTo('Dashboard', {}, 'SAME_WINDOW');\n\t\t\t},\n\t\t\t() => showAlert('Invalid Credentials','error')\n\t\t);\n\t},\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Login_LoginUtils",
+  "deleted": false,
+  "gitSyncId": "638197a1d133c97eea26ace5_638197a2d133c97eea26ad2d"
+}
