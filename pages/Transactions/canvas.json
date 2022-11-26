@@ -2873,6 +2873,106 @@
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "fontSize": "0.875rem"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "ButtonGroup3",
+                              "isCanvas": false,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+                                }
+                              ],
+                              "displayName": "Button Group",
+                              "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
+                              "searchTags": [
+                                "click",
+                                "submit"
+                              ],
+                              "topRow": 26,
+                              "bottomRow": 30,
+                              "parentRowSpace": 10,
+                              "groupButtons": {
+                                "groupButton3": {
+                                  "label": "Actions",
+                                  "iconName": "more",
+                                  "id": "groupButton3",
+                                  "buttonType": "MENU",
+                                  "placement": "CENTER",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 0,
+                                  "menuItems": {
+                                    "menuItem1": {
+                                      "label": "Perform Recon",
+                                      "backgroundColor": "#FFFFFF",
+                                      "id": "menuItem1",
+                                      "widgetId": "",
+                                      "onClick": "{{tbl_merchant_transaction.selectedRowIndices.length === 0?showAlert('Please select unreconciled records.','error'):showAlert('waaah','success')}}",
+                                      "isVisible": true,
+                                      "isDisabled": false,
+                                      "index": 0
+                                    },
+                                    "menuItem3": {
+                                      "label": "Delete",
+                                      "iconName": "trash",
+                                      "iconColor": "#FFFFFF",
+                                      "iconAlign": "right",
+                                      "textColor": "#FFFFFF",
+                                      "backgroundColor": "#DD4B34",
+                                      "id": "menuItem3",
+                                      "widgetId": "",
+                                      "onClick": "{{showAlert('Abhi Nahi','info')}}",
+                                      "isVisible": true,
+                                      "isDisabled": false,
+                                      "index": 1
+                                    }
+                                  },
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                                }
+                              },
+                              "type": "BUTTON_GROUP_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 2.17578125,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "groupButtons.groupButton3.menuItems.menuItem1.onClick"
+                                },
+                                {
+                                  "key": "groupButtons.groupButton3.menuItems.menuItem3.onClick"
+                                }
+                              ],
+                              "leftColumn": 3,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "childStylesheet.button.buttonColor"
+                                },
+                                {
+                                  "key": "groupButtons.groupButton3.buttonColor"
+                                }
+                              ],
+                              "key": "u78wsezpux",
+                              "orientation": "horizontal",
+                              "isDeprecated": false,
+                              "rightColumn": 61,
+                              "widgetId": "9em8birgjb",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "qyoysdg48v",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                                }
+                              },
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY"
                             }
                           ],
                           "key": "spq1k248i8",
@@ -2906,6 +3006,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "multiRowSelection": true,
                       "borderColor": "#E0DEDE",
                       "isVisibleDownload": true,
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -3064,9 +3165,7 @@
                       },
                       "borderRadius": "0.375rem",
                       "primaryColumnId": "nucleiOrderId",
-                      "defaultSelectedRowIndices": [
-                        0
-                      ],
+                      "defaultSelectedRowIndices": "[]",
                       "widgetName": "tbl_merchant_transaction",
                       "defaultPageSize": 0,
                       "columnOrder": [

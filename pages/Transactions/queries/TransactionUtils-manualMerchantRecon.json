@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "setCurrentPage",
-    "fullyQualifiedName": "TransactionUtils.setCurrentPage",
+    "name": "manualMerchantRecon",
+    "fullyQualifiedName": "TransactionUtils.manualMerchantRecon",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,12 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "page => {\n  storeValue('page', page);\n  navigateTo(page);\n}",
+      "body": "() => {}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
-      "isAsync": true
+      "jsArguments": [],
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -36,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "page => {\n  storeValue('page', page);\n  navigateTo(page);\n}"
+      "() => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Transactions_TransactionUtils.setCurrentPage",
+  "id": "Transactions_TransactionUtils.manualMerchantRecon",
   "deleted": false,
-  "gitSyncId": "638197a1d133c97eea26ace5_638197a2d133c97eea26ad22"
+  "gitSyncId": "638197a1d133c97eea26ace5_6381a013d133c97eea26ad4f"
 }
