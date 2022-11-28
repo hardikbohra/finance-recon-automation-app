@@ -2320,7 +2320,11 @@
                         "customColumn1",
                         "customColumn2"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "primaryColumns.customColumn2.onClick"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 63,
                       "columnWidthMap": {
@@ -2678,7 +2682,7 @@
                             }
                           },
                           "iconName": "trash",
-                          "onClick": "{{showModal('model_confirm_delete')}}",
+                          "onClick": "{{FileUtils.deleteSelectedFile(tbl_files.selectedRow.fileUid)}}",
                           "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                           "textColor": "#1e3a8a",
                           "buttonColor": "#dc2626"
@@ -2715,7 +2719,7 @@
                           "buttonLabel": "{{tbl_files.processedTableData.map((currentRow, currentIndex) => ( 'Action'))}}",
                           "iconName": "download",
                           "buttonColor": "rgb(3, 179, 101)",
-                          "onClick": "{{showAlert('File Download request received.','info')}}"
+                          "onClick": "{{FileUtils.downloadFile(tbl_files.selectedRow.fileUid)}}"
                         }
                       },
                       "key": "qqrlxfcozv",
