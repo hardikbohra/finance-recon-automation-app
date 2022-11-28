@@ -1086,7 +1086,7 @@
                                   "key": "groupButtons.groupButton3.onClick"
                                 }
                               ],
-                              "leftColumn": 4,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -1139,7 +1139,7 @@
                               "fontFamily": "System Default",
                               "parentColumnSpace": 2.17578125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 3,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -1190,7 +1190,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 4,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -2895,7 +2895,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 3,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -3031,7 +3031,7 @@
                                   "key": "groupButtons.groupButton3.onClick"
                                 }
                               ],
-                              "leftColumn": 3,
+                              "leftColumn": 2,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -4875,7 +4875,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
