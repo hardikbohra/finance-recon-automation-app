@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "fileUid => {\n  storeValue('fileUid', fileUid);\n  download_file.run();\n}",
+      "body": "fileUid => {\n  storeValue('fileUid', fileUid);\n  download_file.run();\n  storeValue('fileUid', undefined);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "fileUid => {\n  storeValue('fileUid', fileUid);\n  download_file.run();\n}"
+      "fileUid => {\n  storeValue('fileUid', fileUid);\n  download_file.run();\n  storeValue('fileUid', undefined);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
