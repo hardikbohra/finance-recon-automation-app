@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tauthenticate: () => {\n\t\tlogin.run(\n\t\t\t() => {\n\t\t\t\tstoreValue('username', login.data.username, true);\n\t\t\t\tstoreValue('access_token', login.data.accessToken, true);\n\t\t\t\tstoreValue('api_server', 'https://preprod-az.gonuclei.com/api');\n\t\t\t\t\n\t\t\t\tstoreValue('slack_alert_activity', undefined);\n\t\t\t\tstoreValue('slack_alert_message', undefined);\n\t\t\t\tstoreValue('slack_delete_message', 'Deleted the file name : \\'<filename>\\'');\n\t\t\t\t\n\t\t\t\tnavigateTo('Dashboard', {}, 'SAME_WINDOW');\n\t\t\t},\n\t\t\t() => showAlert('Invalid Credentials','error')\n\t\t);\n\t},\n}",
+    "body": "export default {\n\tauthenticate: () => {\n\t\tlogin.run(\n\t\t\t() => {\n\t\t\t\tstoreValue('username', login.data.username, true);\n\t\t\t\tstoreValue('access_token', login.data.accessToken, true);\n\t\t\t\tstoreValue('api_server', 'https://preprod-az.gonuclei.com/api');\n\t\t\t\t\n\t\t\t\tstoreValue('slack_alert_message', \"Activity: \" + appsmith.store.slack_alert_activity + \"\\nUsername: \"+ login.data.email + \"\\n\\nDescription: \"+ appsmith.store.slack_alert_description + \".\");\n\t\t\t\t\n\t\t\t\tnavigateTo('Dashboard', {}, 'SAME_WINDOW');\n\t\t\t},\n\t\t\t() => showAlert('Invalid Credentials','error')\n\t\t);\n\t},\n}",
     "variables": [],
     "userPermissions": []
   },

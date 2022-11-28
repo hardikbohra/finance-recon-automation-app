@@ -1286,11 +1286,7 @@
                       "widgetName": "model_btn_confirm",
                       "onClick": "{{FileUtils.deleteSelectedFile(tbl_files.triggeredRow.fileUid)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -2331,7 +2327,11 @@
                         "customColumn1",
                         "customColumn2"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "primaryColumns.customColumn1.onClick"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 63,
                       "columnWidthMap": {

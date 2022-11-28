@@ -43,7 +43,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "text/plain"
       }
     },
     "executeOnLoad": false,
@@ -52,10 +52,10 @@
         "key": "path"
       },
       {
-        "key": "headers[0].value"
+        "key": "datasourceUrl"
       },
       {
-        "key": "datasourceUrl"
+        "key": "headers[0].value"
       }
     ],
     "isValid": true,
