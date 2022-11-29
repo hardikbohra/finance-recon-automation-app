@@ -52,10 +52,10 @@
         "key": "datasourceUrl"
       },
       {
-        "key": "headers[1].value"
+        "key": "body"
       },
       {
-        "key": "body"
+        "key": "headers[1].value"
       }
     ],
     "isValid": true,
