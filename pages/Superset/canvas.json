@@ -176,10 +176,10 @@
                       "orientation": "horizontal",
                       "isDeprecated": false,
                       "rightColumn": 64,
-                      "widgetId": "07no4hiffp",
+                      "widgetId": "myz8dckm1j",
                       "isVisible": "true",
                       "version": 1,
-                      "parentId": "haqll33b40",
+                      "parentId": "16y6bxdpx1",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "childStylesheet": {
@@ -263,20 +263,39 @@
                               "onClick": "{{storeValue('page', 'Superset'); navigateTo('Superset');}}"
                             }
                           },
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
                           "onClick": "{{storeValue('page', 'Dashboard'); navigateTo('Dashboard');}}"
                         },
                         "groupButton2": {
                           "label": "Transactions",
                           "iconName": "panel-table",
                           "id": "groupButton2",
-                          "buttonType": "SIMPLE",
+                          "buttonType": "MENU",
                           "placement": "CENTER",
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
-                          "menuItems": {},
+                          "menuItems": {
+                            "menuItemvbvgjz9zb4": {
+                              "id": "menuItemvbvgjz9zb4",
+                              "index": 0,
+                              "label": "Bank Transactions",
+                              "widgetId": "dzuajpi3pq",
+                              "isDisabled": false,
+                              "isVisible": true,
+                              "onClick": "{{navigateTo('Merchant Transactions', {}, 'SAME_WINDOW')}}"
+                            },
+                            "menuItem0033pdoejh": {
+                              "id": "menuItem0033pdoejh",
+                              "index": 1,
+                              "label": "Merchant Transactions",
+                              "widgetId": "kkmmbuqj2o",
+                              "isDisabled": false,
+                              "isVisible": true,
+                              "onClick": "{{navigateTo('Merchant Transactions', {}, 'SAME_WINDOW')}}"
+                            }
+                          },
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "onClick": "{{storeValue('page', 'Transactions');navigateTo('Transactions')}}"
                         },
@@ -294,23 +313,9 @@
                           "iconName": "folder-close",
                           "onClick": "{{storeValue('page', 'Files');navigateTo('Files')}}"
                         },
-                        "groupButtonwq1mgg5nqu": {
-                          "id": "groupButtonwq1mgg5nqu",
-                          "index": 3,
-                          "label": "Reports",
-                          "menuItems": {},
-                          "buttonType": "SIMPLE",
-                          "placement": "CENTER",
-                          "widgetId": "lebo9vwi2b",
-                          "isDisabled": false,
-                          "isVisible": true,
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "iconName": "git-repo",
-                          "onClick": "{{storeValue('page', 'Reports');navigateTo('Reports')}}"
-                        },
                         "groupButtonpfy7cnz4fh": {
                           "id": "groupButtonpfy7cnz4fh",
-                          "index": 4,
+                          "index": 3,
                           "label": "User Activities",
                           "menuItems": {},
                           "buttonType": "SIMPLE",
@@ -338,9 +343,6 @@
                           "key": "groupButtons.groupButton999dgpdygj.onClick"
                         },
                         {
-                          "key": "groupButtons.groupButtonwq1mgg5nqu.onClick"
-                        },
-                        {
                           "key": "groupButtons.groupButtonpfy7cnz4fh.onClick"
                         },
                         {
@@ -348,6 +350,12 @@
                         },
                         {
                           "key": "groupButtons.groupButton1.menuItems.menuItem3ub3q0ik2j.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.menuItems.menuItemvbvgjz9zb4.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.menuItems.menuItem0033pdoejh.onClick"
                         }
                       ],
                       "leftColumn": 0,
@@ -365,9 +373,6 @@
                           "key": "groupButtons.groupButton999dgpdygj.buttonColor"
                         },
                         {
-                          "key": "groupButtons.groupButtonwq1mgg5nqu.buttonColor"
-                        },
-                        {
                           "key": "groupButtons.groupButtonpfy7cnz4fh.buttonColor"
                         },
                         {
@@ -375,16 +380,22 @@
                         },
                         {
                           "key": "isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton1.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.onClick"
                         }
                       ],
                       "key": "5cj9izmc6h",
                       "orientation": "horizontal",
                       "isDeprecated": false,
-                      "rightColumn": 36,
-                      "widgetId": "n0bhzevpyc",
+                      "rightColumn": 33,
+                      "widgetId": "wx6efb4jia",
                       "isVisible": "{{appsmith.store.access_token.length > 0}}",
                       "version": 1,
-                      "parentId": "haqll33b40",
+                      "parentId": "16y6bxdpx1",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "childStylesheet": {
@@ -444,12 +455,12 @@
                       "isDeprecated": false,
                       "rightColumn": 49,
                       "textAlign": "RIGHT",
-                      "widgetId": "j7acvx67zx",
+                      "widgetId": "hauwfy1hjy",
                       "isVisible": "{{appsmith.store.access_token.length === 0}}",
                       "fontStyle": "BOLD",
                       "textColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "version": 1,
-                      "parentId": "haqll33b40",
+                      "parentId": "16y6bxdpx1",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -460,12 +471,12 @@
                   "isDeprecated": false,
                   "rightColumn": 301.5,
                   "detachFromLayout": true,
-                  "widgetId": "haqll33b40",
+                  "widgetId": "16y6bxdpx1",
                   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                   "containerStyle": "none",
                   "isVisible": true,
                   "version": 1,
-                  "parentId": "if9zsybcw5",
+                  "parentId": "n8xn7xti6l",
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
@@ -476,7 +487,7 @@
               "backgroundColor": "#312e81",
               "isDeprecated": false,
               "rightColumn": 64,
-              "widgetId": "if9zsybcw5",
+              "widgetId": "n8xn7xti6l",
               "containerStyle": "card",
               "isVisible": true,
               "version": 1,

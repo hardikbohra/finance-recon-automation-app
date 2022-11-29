@@ -271,13 +271,30 @@
                           "label": "Transactions",
                           "iconName": "panel-table",
                           "id": "groupButton2",
-                          "buttonType": "SIMPLE",
+                          "buttonType": "MENU",
                           "placement": "CENTER",
                           "widgetId": "",
                           "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
-                          "menuItems": {},
+                          "menuItems": {
+                            "menuItem0033pdoejh": {
+                              "id": "menuItem0033pdoejh",
+                              "index": 0,
+                              "label": "Bank Transactions",
+                              "widgetId": "kkmmbuqj2o",
+                              "isDisabled": false,
+                              "isVisible": true
+                            },
+                            "menuItemvbvgjz9zb4": {
+                              "id": "menuItemvbvgjz9zb4",
+                              "index": 1,
+                              "label": "Merchant Transactions",
+                              "widgetId": "dzuajpi3pq",
+                              "isDisabled": false,
+                              "isVisible": true
+                            }
+                          },
                           "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
                           "onClick": "{{storeValue('page', 'Transactions');navigateTo('Transactions')}}"
                         },

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "isCurrentPage",
-    "fullyQualifiedName": "ReportsUtils.isCurrentPage",
+    "name": "fetchTransactionType",
+    "fullyQualifiedName": "TransactionUtils.fetchTransactionType",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -16,17 +16,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Reports",
-    "collectionId": "Reports_ReportsUtils",
+    "pageId": "Bank Transactions",
+    "collectionId": "Bank Transactions_TransactionUtils",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "page => {\n  if (appsmith.store.page === page) return true;\n  return false;\n}",
+      "body": "() => {\n  switch (Tabs1.selectedTab) {\n    case 'Bank Transactions':\n      storeValue('dataType', 'BANK_PAYMENT_DATE_TIME');\n      break;\n    case 'Nuclei Transactions':\n      storeValue('dataType', 'NUCLEI_PAYMENT_DATE_TIME');\n      break;\n    case 'Merchant Transactions':\n      storeValue('dataType', 'MERCHANT_PAYMENT_DATE_TIME');\n      break;\n  }\n}",
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {}
-      ],
+      "jsArguments": [],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -44,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Reports_ReportsUtils.isCurrentPage",
+  "id": "Bank Transactions_TransactionUtils.fetchTransactionType",
   "deleted": false,
-  "gitSyncId": "638197a1d133c97eea26ace5_638197a2d133c97eea26ad0b"
+  "gitSyncId": "638197a1d133c97eea26ace5_63859f14d133c97eea26adab"
 }

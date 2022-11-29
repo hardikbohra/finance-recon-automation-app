@@ -9,10 +9,6 @@
       "isDefault": true
     },
     {
-      "id": "Reports",
-      "isDefault": false
-    },
-    {
       "id": "Dashboard",
       "isDefault": false
     },
@@ -26,6 +22,14 @@
     },
     {
       "id": "Transactions",
+      "isDefault": false
+    },
+    {
+      "id": "Bank Transactions",
+      "isDefault": false
+    },
+    {
+      "id": "Merchant Transactions",
       "isDefault": false
     }
   ],

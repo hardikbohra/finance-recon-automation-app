@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "TransactionUtils",
+    "pageId": "Merchant Transactions",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tisCurrentPage: (page) => {\n\t\tif(appsmith.store.page === page) return true;\n\t\treturn false;\n\t},\n\t\n\tsetCurrentPage: (page) => {\n\t\tstoreValue('page', page);\n\t\tnavigateTo(page);\n\t},\n\t\n\tfetchNucleiTransactions: (datatype) => {\n\t\tstoreValue('dataType', datatype);\n\t\tswitch(Tabs1.selectedTab) {\n\t\t\tcase 'Bank Transactions':\n\t\t\t\ttry {\n\t\t\t\t\tfetch_bank_transactions.run();\n\t\t\t\t} catch(e) {\n\t\t\t\t\treturn [];\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t\tcase 'Nuclei Transactions':\n\t\t\t\ttry {\n\t\t\t\t\tfetch_merchant_transactions.run();\n\t\t\t\t} catch(e) {\n\t\t\t\t\treturn [];\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t}\n\t},\n\t\n\tmanualBankRecon: () => {\n\t\tif (tbl_bank_transaction.selectedRows.filter(function(d) {return (d.updatable);}).length != 0) {\n\t\t\tbank_manual_recon.run();\n\t\t\tshowAlert('Received manual recon request for ' + tbl_bank_transaction.selectedRows.length + ' transactions.', 'success');\n\t\t\tcloseModal('b_manual_recon');\n\t\t} else {\n\t\t\tshowAlert('Selected transactions are not updatable.', 'info');\n\t\t}\n\t},\n\t\n\t// called to get type at the time of tab selection\n\tfetchTransactionType: () => {\n\t\tswitch(Tabs1.selectedTab) {\n\t\t\tcase 'Bank Transactions':\n\t\t\t\tstoreValue('dataType', 'BANK_PAYMENT_DATE_TIME');\n\t\t\t\tbreak;\n\t\t\tcase 'Nuclei Transactions':\n\t\t\t\tstoreValue('dataType', 'NUCLEI_PAYMENT_DATE_TIME');\n\t\t\t\tbreak;\n\t\t\tcase 'Merchant Transactions':\n\t\t\t\tstoreValue('dataType', 'MERCHANT_PAYMENT_DATE_TIME');\n\t\t\t\tbreak;\n\t\t}\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Merchant Transactions_TransactionUtils",
+  "deleted": false,
+  "gitSyncId": "638197a1d133c97eea26ace5_6385a0afd133c97eea26ade0"
+}
