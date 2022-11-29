@@ -36,7 +36,7 @@
   "color": "#C2DAF0",
   "icon": "rupee",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"
