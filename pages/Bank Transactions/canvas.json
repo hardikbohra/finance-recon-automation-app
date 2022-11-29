@@ -485,7 +485,7 @@
               ],
               "borderWidth": "1",
               "key": "p60rzxq5l5",
-              "backgroundColor": "#312e81",
+              "backgroundColor": "#1e40af",
               "isDeprecated": false,
               "rightColumn": 64,
               "widgetId": "q1ecxb8eso",
@@ -596,7 +596,7 @@
               "fontSize": "0.875rem"
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "none",
               "multiRowSelection": true,
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
@@ -702,9 +702,6 @@
                   "key": "accentColor"
                 },
                 {
-                  "key": "boxShadow"
-                },
-                {
                   "key": "tableData"
                 },
                 {
@@ -713,7 +710,9 @@
               ],
               "leftColumn": 0,
               "delimiter": ",",
+              "variant": "DEFAULT",
               "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "isVisible": true,
@@ -721,7 +720,7 @@
               "enableClientSideSearch": true,
               "version": 1,
               "textColor": "#1e3a8a",
-              "totalRecordsCount": "{{fetch_bank_transactions.data.data != null ? (fetch_bank_transactions.data.data.totalPages * fetch_bank_transactions.data.data.orderCount) : 0}}",
+              "totalRecordsCount": "{{fetch_bank_transactions.data.data === undefined ? 0 :(fetch_bank_transactions.data.data.totalPages * fetch_bank_transactions.data.data.transactionCount)}}",
               "isLoading": false,
               "onSearchTextChanged": "{{fetch_bank_transactions.run()}}",
               "childStylesheet": {
@@ -758,29 +757,29 @@
                 "nucleiOrderUid",
                 "bankId",
                 "categoryId",
-                "paymentReconciliationStatus",
-                "reconciliationAction",
-                "conflictReason",
-                "nucleiPaymentTransactionId",
-                "nucleiRefundTransactionId",
-                "nucleiPaymentStatus",
-                "nucleiRefundStatus",
-                "refundReconciliationStatus",
-                "nucleiPayableAmount",
-                "nucleiRefundAmount",
-                "nucleiOrderAmount",
                 "nucleiOrderStatus",
-                "paymentReconciliationDateTime",
-                "refundReconciliationDateTime",
+                "nucleiOrderAmount",
+                "nucleiPaymentTransactionId",
                 "nucleiPaymentTransactionDateTime",
-                "nucleiRefundTransactionDateTime",
-                "bankPaymentStatus",
-                "bankPaymentTransactionAmount",
+                "nucleiPaymentStatus",
+                "nucleiPayableAmount",
                 "bankPaymentTransactionId",
                 "bankPaymentTransactionDatetime",
-                "bankRefundStatus",
-                "bankRefundTransactionAmount",
+                "bankPaymentStatus",
+                "bankPaymentTransactionAmount",
+                "paymentReconciliationDateTime",
+                "paymentReconciliationStatus",
+                "conflictReason",
+                "reconciliationAction",
+                "nucleiRefundTransactionDateTime",
+                "nucleiRefundStatus",
+                "nucleiRefundAmount",
+                "nucleiRefundTransactionId",
                 "bankRefundTransactionDateTime",
+                "bankRefundTransactionAmount",
+                "bankRefundStatus",
+                "refundReconciliationDateTime",
+                "refundReconciliationStatus",
                 "paymentFileId",
                 "refundFileId",
                 "updatable"
@@ -853,7 +852,7 @@
                   "validation": {},
                   "fontStyle": "",
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent"
+                  "cellBackground": "#fff"
                 },
                 "nucleiRefundTransactionId": {
                   "allowCellWrapping": false,
@@ -880,7 +879,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiRefundTransactionId\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiPaymentStatus": {
@@ -908,7 +907,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiPaymentStatus\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiRefundStatus": {
@@ -936,7 +935,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiRefundStatus\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "categoryId": {
@@ -964,7 +963,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"categoryId\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "paymentReconciliationStatus": {
@@ -992,7 +991,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"paymentReconciliationStatus\"]))}}",
                   "validation": {},
                   "textColor": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow.paymentReconciliationStatus === \"UNRECONCILED\" ? \"red\" : \"green\"))}}",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "reconciliationAction": {
@@ -1020,7 +1019,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reconciliationAction\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "conflictReason": {
@@ -1048,7 +1047,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"conflictReason\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "refundReconciliationStatus": {
@@ -1076,7 +1075,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"refundReconciliationStatus\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiPayableAmount": {
@@ -1104,7 +1103,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiPayableAmount\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiRefundAmount": {
@@ -1132,7 +1131,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiRefundAmount\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiOrderUid": {
@@ -1160,7 +1159,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiOrderUid\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiOrderAmount": {
@@ -1188,7 +1187,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiOrderAmount\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiOrderStatus": {
@@ -1216,7 +1215,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiOrderStatus\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "paymentReconciliationDateTime": {
@@ -1244,7 +1243,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"paymentReconciliationDateTime\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": "",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
@@ -1273,7 +1272,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"refundReconciliationDateTime\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "nucleiPaymentTransactionDateTime": {
@@ -1301,7 +1300,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiPaymentTransactionDateTime\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": "",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
@@ -1330,7 +1329,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiRefundTransactionDateTime\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankId": {
@@ -1358,7 +1357,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankId\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankPaymentStatus": {
@@ -1386,7 +1385,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankPaymentStatus\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankPaymentTransactionAmount": {
@@ -1414,7 +1413,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankPaymentTransactionAmount\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankPaymentTransactionId": {
@@ -1442,7 +1441,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankPaymentTransactionId\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankPaymentTransactionDatetime": {
@@ -1470,7 +1469,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankPaymentTransactionDatetime\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": "",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
@@ -1499,7 +1498,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankRefundStatus\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankRefundTransactionAmount": {
@@ -1527,7 +1526,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankRefundTransactionAmount\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "bankRefundTransactionDateTime": {
@@ -1555,7 +1554,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"bankRefundTransactionDateTime\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "paymentFileId": {
@@ -1583,7 +1582,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"paymentFileId\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "refundFileId": {
@@ -1611,7 +1610,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"refundFileId\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 },
                 "updatable": {
@@ -1639,7 +1638,7 @@
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"updatable\"]))}}",
                   "validation": {},
                   "textColor": "#1e3a8a",
-                  "cellBackground": "transparent",
+                  "cellBackground": "#fff",
                   "fontStyle": ""
                 }
               },
@@ -1658,7 +1657,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "isVisiblePagination": true,
-              "cellBackground": "transparent",
+              "cellBackground": "#fff",
               "verticalAlignment": "TOP"
             },
             {
@@ -3892,7 +3891,7 @@
               "onDateSelected": "{{fetch_bank_transactions.run(() => {}, () => {})}}",
               "labelTextSize": "0.875rem",
               "isRequired": true,
-              "defaultDate": "{{new Date(new Date().setDate(new Date().getDate() - 2))}}",
+              "defaultDate": "{{new Date(new Date().setDate(new Date().getDate() - 200))}}",
               "isDeprecated": false,
               "rightColumn": 38,
               "widgetId": "qbcj1mxxsm",

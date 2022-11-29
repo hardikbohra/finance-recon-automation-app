@@ -52,6 +52,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "backgroundColor"
                 }
               ],
               "children": [
@@ -484,7 +487,7 @@
               ],
               "borderWidth": "1",
               "key": "p60rzxq5l5",
-              "backgroundColor": "#312e81",
+              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
               "isDeprecated": false,
               "rightColumn": 64,
               "widgetId": "n8xn7xti6l",

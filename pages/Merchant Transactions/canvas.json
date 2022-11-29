@@ -53,6 +53,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "backgroundColor"
                 }
               ],
               "children": [
@@ -485,7 +488,7 @@
               ],
               "borderWidth": "1",
               "key": "p60rzxq5l5",
-              "backgroundColor": "#312e81",
+              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
               "isDeprecated": false,
               "rightColumn": 64,
               "widgetId": "dz66igbu1w",
@@ -554,7 +557,7 @@
               "onDateSelected": "{{fetch_merchant_transactions.run()}}",
               "labelTextSize": "0.875rem",
               "isRequired": true,
-              "defaultDate": "{{new Date(new Date().setDate(new Date().getDate() - 8))}}",
+              "defaultDate": "{{new Date(new Date().setDate(new Date().getDate() - 80))}}",
               "isDeprecated": false,
               "rightColumn": 38,
               "widgetId": "rtu3zc3ihy",
@@ -743,30 +746,6 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "primaryColumns.categoryId.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.reconciliationAction.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.conflictReason.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.nucleiPayableAmount.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.nucleiOrderAmount.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.nucleiOrderStatus.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.bankId.cellBackground"
-                },
-                {
-                  "key": "cellBackground"
-                },
-                {
                   "key": "tableData"
                 },
                 {
@@ -822,6 +801,81 @@
                 },
                 {
                   "key": "totalRecordsCount"
+                },
+                {
+                  "key": "primaryColumns.categoryId.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.reconciliationAction.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.conflictReason.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiPayableAmount.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiOrderAmount.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiOrderStatus.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.bankId.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantId.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiOrderId.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantOrderStatus.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.reconciliationStatus.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.referenceRequestId.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiWalletAmount.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiReconciliationDateTime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiOrderCreatedDateTime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiOrderUpdatedDateTime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiPaymentCreatedDateTime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.nucleiPaymentUpdatedDateTime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantOrderAmount.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantOrderId.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantReconciliationDateTime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantOrderDatetime.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.merchantAmountPaid.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.fileId.cellBackground"
+                },
+                {
+                  "key": "cellBackground"
                 }
               ],
               "leftColumn": 0,
@@ -1151,7 +1205,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantId\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "nucleiOrderId": {
                   "allowCellWrapping": false,
@@ -1179,7 +1233,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiOrderId\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "merchantOrderStatus": {
                   "allowCellWrapping": false,
@@ -1207,7 +1261,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantOrderStatus\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "reconciliationStatus": {
                   "allowCellWrapping": false,
@@ -1235,7 +1289,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reconciliationStatus\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "referenceRequestId": {
                   "allowCellWrapping": false,
@@ -1263,7 +1317,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"referenceRequestId\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "nucleiWalletAmount": {
                   "allowCellWrapping": false,
@@ -1291,7 +1345,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiWalletAmount\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "nucleiReconciliationDateTime": {
                   "allowCellWrapping": false,
@@ -1319,7 +1373,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiReconciliationDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "nucleiOrderCreatedDateTime": {
                   "allowCellWrapping": false,
@@ -1347,7 +1401,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiOrderCreatedDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "nucleiOrderUpdatedDateTime": {
@@ -1376,7 +1430,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiOrderUpdatedDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "nucleiPaymentCreatedDateTime": {
@@ -1405,7 +1459,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiPaymentCreatedDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "nucleiPaymentUpdatedDateTime": {
@@ -1434,7 +1488,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiPaymentUpdatedDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                   "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "merchantOrderAmount": {
@@ -1463,7 +1517,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantOrderAmount\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "merchantOrderId": {
                   "allowCellWrapping": false,
@@ -1491,7 +1545,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantOrderId\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "merchantReconciliationDateTime": {
                   "allowCellWrapping": false,
@@ -1519,7 +1573,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantReconciliationDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "merchantOrderDatetime": {
                   "allowCellWrapping": false,
@@ -1547,7 +1601,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantOrderDatetime\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "merchantAmountPaid": {
                   "allowCellWrapping": false,
@@ -1575,7 +1629,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantAmountPaid\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "fileId": {
                   "allowCellWrapping": false,
@@ -1603,7 +1657,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fileId\"]))}}",
                   "validation": {},
-                  "cellBackground": "#eff6ff"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 }
               },
               "onRowSelected": "",
