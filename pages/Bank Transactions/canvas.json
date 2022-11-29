@@ -1711,6 +1711,120 @@
                   ],
                   "children": [
                     {
+                      "widgetName": "b_select_refund_recon_status",
+                      "displayName": "Checkbox Group",
+                      "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
+                      "labelText": "Refund Recon Status",
+                      "topRow": 18,
+                      "bottomRow": 24,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "CHECKBOX_GROUP_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.75,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Auto",
+                      "options": [
+                        {
+                          "label": "Reconciled",
+                          "value": "RECONCILED"
+                        },
+                        {
+                          "label": "Unreconciled",
+                          "value": "UNRECONCILED"
+                        },
+                        {
+                          "label": "NA",
+                          "value": ""
+                        }
+                      ],
+                      "labelStyle": "BOLD",
+                      "isDisabled": false,
+                      "key": "vmrfxsinbt",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "defaultSelectedValues": "",
+                      "widgetId": "4qngfgyk65",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 2,
+                      "parentId": "2k941qkuni",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "isInline": true
+                    },
+                    {
+                      "widgetName": "b_select_nuclei_refund_stats",
+                      "displayName": "Checkbox Group",
+                      "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
+                      "labelText": "Refund Status",
+                      "topRow": 26,
+                      "bottomRow": 32,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "CHECKBOX_GROUP_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.8125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "options": [
+                        {
+                          "label": "Success",
+                          "value": "SUCCESS"
+                        },
+                        {
+                          "label": "Failed",
+                          "value": "FAILED"
+                        },
+                        {
+                          "label": "Pending",
+                          "value": "IN_PROCESS"
+                        }
+                      ],
+                      "labelStyle": "BOLD",
+                      "isDisabled": false,
+                      "key": "qmfk4rtbfk",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "defaultSelectedValues": "",
+                      "widgetId": "98c95y5jrc",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 2,
+                      "parentId": "2k941qkuni",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "isInline": true
+                    },
+                    {
                       "boxShadow": "none",
                       "widgetName": "b_select_category",
                       "isFilterable": true,
@@ -1963,7 +2077,7 @@
                       "widgetName": "b_select_recon_status",
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
-                      "labelText": "Recon Status",
+                      "labelText": "Payment Recon Status",
                       "topRow": 18,
                       "bottomRow": 24,
                       "parentRowSpace": 10,
@@ -1973,7 +2087,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 12,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2003,7 +2117,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 54,
+                      "rightColumn": 33,
                       "defaultSelectedValues": "",
                       "widgetId": "lyuclv6g0u",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2069,6 +2183,63 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                    },
+                    {
+                      "widgetName": "b_select_nuclei_payment_status",
+                      "displayName": "Checkbox Group",
+                      "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
+                      "labelText": "Payment Status",
+                      "topRow": 26,
+                      "bottomRow": 32,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "CHECKBOX_GROUP_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.8125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "options": [
+                        {
+                          "label": "Success",
+                          "value": "SUCCESS"
+                        },
+                        {
+                          "label": "Failed",
+                          "value": "FAILED"
+                        },
+                        {
+                          "label": "Pending",
+                          "value": "IN_PROCESS"
+                        }
+                      ],
+                      "labelStyle": "BOLD",
+                      "isDisabled": false,
+                      "key": "qmfk4rtbfk",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 33,
+                      "defaultSelectedValues": "",
+                      "widgetId": "wpuiw9e1xp",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 2,
+                      "parentId": "2k941qkuni",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "isInline": true
                     }
                   ],
                   "isDisabled": false,
@@ -2099,7 +2270,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 576
+              "width": 706
             },
             {
               "boxShadow": "none",
@@ -4214,14 +4385,17 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "b_select_nuclei_payment_status.selectedValues || []",
                 "appsmith.store.access_token",
+                "b_select_nuclei_refund_stats.selectedValues || []",
                 "appsmith.store.api_server",
                 "tbl_bank_transaction.pageNo",
                 "b_from_date.formattedDate || \"\"",
                 "b_select_recon_status.selectedValues || []",
                 "b_select_category.selectedOptionValues || [1]",
                 "b_select_bank.selectedOptionValues || [2]",
-                "b_to_date.formattedDate || \"\""
+                "b_to_date.formattedDate || \"\"",
+                "b_select_refund_recon_status.selectedValues || []"
               ],
               "timeoutInMillisecond": 10000
             }
