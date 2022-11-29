@@ -1216,14 +1216,11 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Are you sure?{{tbl_files.selectedRow.}}",
+                      "text": "Are you sure?",
                       "key": "szqtg97aw2",
                       "isDeprecated": false,
                       "rightColumn": 53,
