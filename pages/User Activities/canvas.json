@@ -327,7 +327,7 @@
                           "widgetId": "gtayj01ap6",
                           "isDisabled": false,
                           "isVisible": true,
-                          "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
+                          "buttonColor": "#1d4ed8",
                           "iconName": "clipboard",
                           "onClick": "{{storeValue('page', 'User Activities');navigateTo('User Activities')}}"
                         }
@@ -375,9 +375,6 @@
                         },
                         {
                           "key": "groupButtons.groupButton999dgpdygj.buttonColor"
-                        },
-                        {
-                          "key": "groupButtons.groupButtonpfy7cnz4fh.buttonColor"
                         },
                         {
                           "key": "groupButtons.groupButton1.buttonColor"

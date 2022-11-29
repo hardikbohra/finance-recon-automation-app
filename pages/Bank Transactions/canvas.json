@@ -297,7 +297,7 @@
                               "onClick": "{{navigateTo('Merchant Transactions', {}, 'SAME_WINDOW')}}"
                             }
                           },
-                          "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
+                          "buttonColor": "#1d4ed8",
                           "onClick": "{{storeValue('page', 'Transactions');navigateTo('Transactions')}}"
                         },
                         "groupButton999dgpdygj": {
@@ -366,9 +366,6 @@
                         },
                         {
                           "key": "childStylesheet.button.buttonColor"
-                        },
-                        {
-                          "key": "groupButtons.groupButton2.buttonColor"
                         },
                         {
                           "key": "groupButtons.groupButton999dgpdygj.buttonColor"

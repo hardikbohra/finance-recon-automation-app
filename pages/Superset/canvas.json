@@ -266,7 +266,7 @@
                               "onClick": "{{storeValue('page', 'Superset'); navigateTo('Superset');}}"
                             }
                           },
-                          "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
+                          "buttonColor": "#1d4ed8",
                           "onClick": "{{storeValue('page', 'Dashboard'); navigateTo('Dashboard');}}"
                         },
                         "groupButton2": {
@@ -377,9 +377,6 @@
                         },
                         {
                           "key": "groupButtons.groupButtonpfy7cnz4fh.buttonColor"
-                        },
-                        {
-                          "key": "groupButtons.groupButton1.buttonColor"
                         },
                         {
                           "key": "isVisible"

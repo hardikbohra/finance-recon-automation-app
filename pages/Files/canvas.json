@@ -313,7 +313,7 @@
                           "widgetId": "zs266iezi8",
                           "isDisabled": false,
                           "isVisible": true,
-                          "buttonColor": "{{appsmith.theme.colors.backgroundColor}}",
+                          "buttonColor": "#1d4ed8",
                           "iconName": "folder-close",
                           "onClick": "{{storeValue('page', 'Files');navigateTo('Files')}}"
                         },
@@ -372,9 +372,6 @@
                         },
                         {
                           "key": "groupButtons.groupButton2.buttonColor"
-                        },
-                        {
-                          "key": "groupButtons.groupButton999dgpdygj.buttonColor"
                         },
                         {
                           "key": "groupButtons.groupButtonpfy7cnz4fh.buttonColor"
