@@ -1691,13 +1691,13 @@
                   "widgetName": "Canvas9Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 450,
+                  "bottomRow": 510,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 456,
+                  "minHeight": 518,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -1715,8 +1715,8 @@
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Refund Recon Status",
-                      "topRow": 18,
-                      "bottomRow": 24,
+                      "topRow": 15,
+                      "bottomRow": 21,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "CHECKBOX_GROUP_WIDGET",
@@ -1724,7 +1724,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1754,7 +1754,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 49,
                       "defaultSelectedValues": "",
                       "widgetId": "4qngfgyk65",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1772,8 +1772,8 @@
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Refund Status",
-                      "topRow": 26,
-                      "bottomRow": 32,
+                      "topRow": 28,
+                      "bottomRow": 34,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "CHECKBOX_GROUP_WIDGET",
@@ -1781,7 +1781,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 8.8125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1811,7 +1811,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 49,
                       "defaultSelectedValues": "",
                       "widgetId": "98c95y5jrc",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1835,8 +1835,8 @@
                         "dropdown",
                         "tags"
                       ],
-                      "topRow": 9,
-                      "bottomRow": 16,
+                      "topRow": 7,
+                      "bottomRow": 14,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_WIDGET_V2",
@@ -1846,7 +1846,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1870,7 +1870,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 54,
+                      "rightColumn": 53,
                       "widgetId": "4ux533a22v",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1943,7 +1943,7 @@
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
+                      "leftColumn": 5,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -1985,8 +1985,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 37,
-                      "bottomRow": 41,
+                      "topRow": 42,
+                      "bottomRow": 46,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1995,7 +1995,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 17,
+                      "leftColumn": 16,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2008,7 +2008,7 @@
                       "isDisabled": false,
                       "key": "ip66gs3rze",
                       "isDeprecated": false,
-                      "rightColumn": 33,
+                      "rightColumn": 32,
                       "isDefaultClickDisabled": true,
                       "widgetId": "7bcgn397hm",
                       "buttonStyle": "PRIMARY",
@@ -2035,8 +2035,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 37,
-                      "bottomRow": 41,
+                      "topRow": 42,
+                      "bottomRow": 46,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -2045,7 +2045,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2058,7 +2058,7 @@
                       "isDisabled": false,
                       "key": "ip66gs3rze",
                       "isDeprecated": false,
-                      "rightColumn": 49,
+                      "rightColumn": 48,
                       "isDefaultClickDisabled": true,
                       "widgetId": "s8kozvrz62",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -2078,8 +2078,8 @@
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Payment Recon Status",
-                      "topRow": 18,
-                      "bottomRow": 24,
+                      "topRow": 15,
+                      "bottomRow": 21,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "CHECKBOX_GROUP_WIDGET",
@@ -2087,7 +2087,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 11,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2117,7 +2117,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 33,
+                      "rightColumn": 29,
                       "defaultSelectedValues": "",
                       "widgetId": "lyuclv6g0u",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2141,8 +2141,8 @@
                         "dropdown",
                         "tags"
                       ],
-                      "topRow": 9,
-                      "bottomRow": 16,
+                      "topRow": 7,
+                      "bottomRow": 14,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_WIDGET_V2",
@@ -2152,7 +2152,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 6.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 12,
+                      "leftColumn": 11,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2173,7 +2173,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 33,
+                      "rightColumn": 32,
                       "widgetId": "3rx9gk2zeu",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -2189,8 +2189,8 @@
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Payment Status",
-                      "topRow": 26,
-                      "bottomRow": 32,
+                      "topRow": 28,
+                      "bottomRow": 34,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "CHECKBOX_GROUP_WIDGET",
@@ -2198,7 +2198,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 8.8125,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 11,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2228,7 +2228,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 33,
+                      "rightColumn": 28,
                       "defaultSelectedValues": "",
                       "widgetId": "wpuiw9e1xp",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2258,7 +2258,7 @@
                 }
               ],
               "key": "2h52l0qwpm",
-              "height": 456,
+              "height": 518,
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
@@ -2270,7 +2270,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 706
+              "width": 608
             },
             {
               "boxShadow": "none",
