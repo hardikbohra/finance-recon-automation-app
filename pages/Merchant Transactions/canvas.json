@@ -297,10 +297,12 @@
                               "widgetId": "kkmmbuqj2o",
                               "isDisabled": false,
                               "isVisible": true,
-                              "onClick": "{{navigateTo('Merchant Transactions', {}, 'SAME_WINDOW')}}"
+                              "onClick": "{{navigateTo('Merchant Transactions', {}, 'SAME_WINDOW')}}",
+                              "backgroundColor": "#1e3a8a",
+                              "textColor": "{{appsmith.theme.colors.backgroundColor}}"
                             }
                           },
-                          "buttonColor": "#1d4ed8",
+                          "buttonColor": "#1e3a8a",
                           "onClick": "{{storeValue('page', 'Transactions');navigateTo('Transactions')}}"
                         },
                         "groupButton999dgpdygj": {
@@ -387,6 +389,9 @@
                         },
                         {
                           "key": "groupButtons.groupButton2.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.menuItems.menuItem0033pdoejh.textColor"
                         }
                       ],
                       "key": "5cj9izmc6h",
@@ -443,9 +448,6 @@
                           "key": "borderRadius"
                         },
                         {
-                          "key": "textColor"
-                        },
-                        {
                           "key": "isVisible"
                         }
                       ],
@@ -455,17 +457,18 @@
                       "key": "exnouts83t",
                       "isDeprecated": false,
                       "rightColumn": 49,
-                      "textAlign": "RIGHT",
+                      "backgroundColor": "#fef9c3",
+                      "textAlign": "CENTER",
                       "widgetId": "pqjfp2j1r4",
                       "isVisible": "{{appsmith.store.access_token.length === 0}}",
-                      "fontStyle": "BOLD",
-                      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+                      "fontStyle": "",
+                      "textColor": "#ef4444",
                       "version": 1,
                       "parentId": "bq2922xuw5",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "fontSize": "1rem"
+                      "fontSize": "0.875rem"
                     }
                   ],
                   "key": "8tv822409p",
