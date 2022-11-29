@@ -2727,7 +2727,7 @@
                           "buttonLabel": "{{tbl_files.processedTableData.map((currentRow, currentIndex) => ( 'Action'))}}",
                           "iconName": "download",
                           "buttonColor": "rgb(3, 179, 101)",
-                          "onClick": "{{download(FileUtils.downloadFile(tbl_files.triggeredRow.fileUid),tbl_files.triggeredRow.name,'text/csv')}}"
+                          "onClick": "{{download(FileUtils.downloadFile(tbl_files.triggeredRow.fileUid),tbl_files.triggeredRow.name,)}}"
                         }
                       },
                       "key": "qqrlxfcozv",
