@@ -796,6 +796,9 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.paymentReconciliationStatus.textColor"
                 }
               ],
               "leftColumn": 0,
@@ -881,6 +884,9 @@
                 },
                 {
                   "key": "textSize"
+                },
+                {
+                  "key": "primaryColumns.paymentReconciliationStatus.textColor"
                 }
               ],
               "compactMode": "DEFAULT",
@@ -1075,7 +1081,7 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"paymentReconciliationStatus\"]))}}",
                   "validation": {},
-                  "textColor": "#1e3a8a",
+                  "textColor": "{{tbl_bank_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow.paymentReconciliationStatus === \"UNRECONCILED\" ? \"red\" : \"green\"))}}",
                   "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                   "fontStyle": ""
                 },
