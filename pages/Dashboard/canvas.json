@@ -506,8 +506,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 78,
-              "bottomRow": 82,
+              "topRow": 102,
+              "bottomRow": 106,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -548,8 +548,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 78,
-              "bottomRow": 82,
+              "topRow": 102,
+              "bottomRow": 106,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -597,8 +597,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 78,
-              "bottomRow": 82,
+              "topRow": 102,
+              "bottomRow": 106,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -642,8 +642,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 82,
-              "bottomRow": 125,
+              "topRow": 106,
+              "bottomRow": 149,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -680,9 +680,9 @@
                   ],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "boxShadow": "none",
                       "widgetName": "bank_wise_unreconciled",
-                      "borderColor": "#E0DEDE",
+                      "borderColor": "transparent",
                       "isCanvas": true,
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
@@ -702,9 +702,6 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "boxShadow"
                         }
                       ],
                       "children": [
@@ -1189,8 +1186,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 82,
-              "bottomRow": 125,
+              "topRow": 106,
+              "bottomRow": 149,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1227,9 +1224,9 @@
                   ],
                   "children": [
                     {
-                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "boxShadow": "none",
                       "widgetName": "merchant_wise_unreconciled",
-                      "borderColor": "#E0DEDE",
+                      "borderColor": "transparent",
                       "isCanvas": true,
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
@@ -1249,9 +1246,6 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "boxShadow"
                         }
                       ],
                       "children": [
@@ -1722,7 +1716,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "none",
               "widgetName": "Container6",
               "borderColor": "rgba(0, 0, 0, 0.1)",
               "isCanvas": true,
@@ -1733,8 +1727,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 24,
-              "bottomRow": 78,
+              "topRow": 48,
+              "bottomRow": 102,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1767,6 +1761,146 @@
                   ],
                   "children": [
                     {
+                      "boxShadow": "none",
+                      "widgetName": "switch_1",
+                      "displayName": "Switch",
+                      "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "SWITCH_WIDGET",
+                      "alignWidget": "RIGHT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.25,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "isDisabled": false,
+                      "key": "r7lxlqnhns",
+                      "isDeprecated": false,
+                      "rightColumn": 9,
+                      "widgetId": "fzkqcksji6",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Merchant Wise Chart",
+                      "defaultSwitchState": false,
+                      "version": 1,
+                      "parentId": "reyby7pw66",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "widgetName": "Text7Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 16.25,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 48,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "To",
+                      "key": "u9nnwda1xt",
+                      "isDeprecated": false,
+                      "rightColumn": 50,
+                      "textAlign": "CENTER",
+                      "widgetId": "y1w6h01f2w",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "reyby7pw66",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "0.875rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "DatePicker1Copy",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dateFormat": "DD-MM-YYYY",
+                      "displayName": "DatePicker",
+                      "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "DATE_PICKER_WIDGET2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.9375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 39,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "isDisabled": false,
+                      "key": "g369skqyxv",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "defaultDate": "2022-11-11T00:00:00.000+00:00",
+                      "isDeprecated": false,
+                      "rightColumn": 48,
+                      "widgetId": "fvpodvgjkx",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "datePickerType": "DATE_PICKER",
+                      "label": "",
+                      "version": 2,
+                      "parentId": "reyby7pw66",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "timePrecision": "minute",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "firstDayOfWeek": "1",
+                      "closeOnSelection": true,
+                      "maxDate": "2121-12-31T18:29:00.000Z"
+                    },
+                    {
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
@@ -1784,7 +1918,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 11.9375,
-                      "leftColumn": 57,
+                      "leftColumn": 59,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1815,6 +1949,7 @@
                       "boxShadow": "none",
                       "widgetName": "Select1Copy",
                       "isFilterable": true,
+                      "dynamicPropertyPathList": [],
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "labelText": "",
@@ -1832,7 +1967,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 11.9375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 29,
+                      "leftColumn": 26,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1842,17 +1977,20 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "placeholderText"
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{ static_data.data.banks.map((row) => { \n      return { label: row.name, value: row.id } \n   }) \n}}",
-                      "placeholderText": "Select Bank",
+                      "options": "{{ switch_1.isSwitchedOn ? static_data.data.merchants.map((row) => { \n      return { label: row.name, value: row.id } \n   }) : static_data.data.banks.map((row) => { \n      return { label: row.name, value: row.id } \n   }) \n}}",
+                      "placeholderText": "Select {{switch_1.isSwitchedOn ? \"Merchant\" : \"Bank\"}}",
                       "isDisabled": false,
                       "key": "7k70imabj7",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 43,
+                      "rightColumn": 36,
                       "widgetId": "7kzw5g0odc",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1935,7 +2073,7 @@
                               "chartData": {
                                 "rn8hatwwuf": {
                                   "seriesName": "Cleartrip",
-                                  "data": "[\n  {\n    \"x\":\"REDBUS\",\n    \"y\":3033055.81\n  },\n  {\n    \"x\":\"GIVEINDIA\",\n    \"y\":236124.50\n  },\n  {\n    \"x\":\"CLEARTRIP_F\",\n    \"y\":29376302.00\n  },\n  {\n    \"x\":\"QWIKGIFT\",\n    \"y\":2605.00\n  },\n  {\n    \"x\":\"JRI\",\n    \"y\":1999593.00\n  },\n  {\n    \"x\":\"CLEARTRIP_H\",\n    \"y\":600636.75\n  },\n  {\n    \"x\":\"PAY1\",\n    \"y\":1873303.00\n  },\n  {\n    \"x\":\"SPECIFICSTEP\",\n    \"y\":1027883.00\n  }\n]"
+                                  "data": "{{DashboardUtils.getGmvChart(!switch_1.isSwitchedOn)}}"
                                 },
                                 "i72iypu58q": {
                                   "seriesName": "Experian",
@@ -1985,6 +2123,9 @@
                                 },
                                 {
                                   "key": "fontFamily"
+                                },
+                                {
+                                  "key": "chartData.rn8hatwwuf.data"
                                 }
                               ],
                               "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": [\n      {\n        \"label\": \"AU\",\n        \"value\": {\n\t\t\t\t\"x\": 200,\n\t\t\t\t\"y\": \"CT\"\n\t\t\t\t}\n      },\n      {\n        \"label\": \"Product2\",\n        \"value\": 22000\n      },\n      {\n        \"label\": \"Product3\",\n        \"value\": 32000\n      }\n    ],\n    \"chart\": {\n      \"caption\": \"Sales Report\",\n      \"xAxisName\": \"Product Line\",\n      \"yAxisName\": \"Revenue($)\",\n      \"theme\": \"fusion\",\n      \"alignCaptionWithCanvas\": 1,\n      \"captionFontSize\": \"24\",\n      \"captionAlignment\": \"center\",\n      \"captionPadding\": \"20\",\n      \"captionFontColor\": \"#231F20\",\n      \"legendIconSides\": \"4\",\n      \"legendIconBgAlpha\": \"100\",\n      \"legendIconAlpha\": \"100\",\n      \"legendPosition\": \"top\",\n      \"canvasPadding\": \"0\",\n      \"chartLeftMargin\": \"20\",\n      \"chartTopMargin\": \"10\",\n      \"chartRightMargin\": \"40\",\n      \"chartBottomMargin\": \"10\",\n      \"xAxisNameFontSize\": \"14\",\n      \"labelFontSize\": \"12\",\n      \"labelFontColor\": \"#716E6E\",\n      \"xAxisNameFontColor\": \"#716E6E\",\n      \"yAxisNameFontSize\": \"14\",\n      \"yAxisValueFontSize\": \"12\",\n      \"yAxisValueFontColor\": \"#716E6E\",\n      \"yAxisNameFontColor\": \"#716E6E\"\n    }\n  }\n}",
@@ -2011,7 +2152,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": false,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 0,
+                              "topRow": 5,
                               "isSortable": false,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -2051,7 +2192,10 @@
                                   "key": "childStylesheet.editActions.discardBorderRadius"
                                 },
                                 {
-                                  "key": "primaryColumns.Merchant.computedValue"
+                                  "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.Bank.computedValue"
                                 },
                                 {
                                   "key": "primaryColumns.GMV.computedValue"
@@ -2097,10 +2241,11 @@
                               "widgetName": "Table1",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "Merchant",
+                                "Bank",
                                 "GMV"
                               ],
                               "dynamicPropertyPathList": [],
+                              "compactMode": "SHORT",
                               "displayName": "Table",
                               "bottomRow": 40,
                               "columnWidthMap": {
@@ -2114,17 +2259,19 @@
                               "dynamicTriggerPathList": [],
                               "borderWidth": "1",
                               "primaryColumns": {
-                                "Merchant": {
+                                "Bank": {
                                   "allowCellWrapping": false,
-                                  "index": 1,
+                                  "index": 0,
                                   "width": 150,
-                                  "originalId": "Merchant",
-                                  "id": "Merchant",
-                                  "alias": "Merchant",
+                                  "originalId": "Bank",
+                                  "id": "Bank",
+                                  "alias": "Bank",
                                   "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
+                                  "verticalAlignment": "TOP",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -2133,11 +2280,12 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Merchant",
+                                  "label": "Bank",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Merchant\"]))}}",
-                                  "validation": {}
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Bank\"]))}}",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 },
                                 "GMV": {
                                   "allowCellWrapping": false,
@@ -2147,9 +2295,11 @@
                                   "id": "GMV",
                                   "alias": "GMV",
                                   "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
+                                  "verticalAlignment": "TOP",
                                   "columnType": "number",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -2162,7 +2312,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"GMV\"]))}}",
-                                  "validation": {}
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "y9jn48fu4b",
@@ -2170,7 +2321,7 @@
                               "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "0zctw2x9k7",
-                              "tableData": "[\n  {\n    \"Merchant\":\"REDBUS\",\n    \"GMV\":3033055.81\n  },\n  {\n    \"Merchant\":\"GIVEINDIA\",\n    \"GMV\":236124.50\n  },\n  {\n    \"Merchant\":\"CLEARTRIP_F\",\n    \"GMV\":29376302.00\n  },\n  {\n    \"Merchant\":\"QWIKGIFT\",\n    \"GMV\":2605.00\n  },\n  {\n    \"Merchant\":\"JRI\",\n    \"GMV\":1999593.00\n  },\n  {\n    \"Merchant\":\"CLEARTRIP_H\",\n    \"GMV\":600636.75\n  },\n  {\n    \"Merchant\":\"PAY1\",\n    \"GMV\":1873303.00\n  },\n  {\n    \"Merchant\":\"SPECIFICSTEP\",\n    \"GMV\":1027883.00\n  }\n]",
+                              "tableData": "{{DashboardUtils.getGmvData(!switch_1.isSwitchedOn)}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "wyy0qvkc9a",
@@ -2178,13 +2329,65 @@
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": false,
                               "isVisiblePagination": false,
-                              "verticalAlignment": "CENTER"
+                              "verticalAlignment": "TOP"
+                            },
+                            {
+                              "widgetName": "Text8",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                              "searchTags": [
+                                "typography",
+                                "paragraph",
+                                "label"
+                              ],
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "parentColumnSpace": 15.9375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 47,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "truncateButtonColor"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "text": "{{Select1Copy.selectedOptionLabel}}",
+                              "key": "u9nnwda1xt",
+                              "isDeprecated": false,
+                              "rightColumn": 64,
+                              "textAlign": "CENTER",
+                              "widgetId": "lqrw82eytf",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "wyy0qvkc9a",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "fontSize": "1rem"
                             }
                           ],
                           "isDisabled": false,
                           "key": "x3v5vu7euy",
                           "isDeprecated": false,
-                          "tabName": "GMV for the day",
+                          "tabName": "GMV Visualisation",
                           "rightColumn": 286.5,
                           "detachFromLayout": true,
                           "widgetId": "wyy0qvkc9a",
@@ -2695,7 +2898,7 @@
                       "shouldShowTabs": true,
                       "tabsObj": {
                         "tab1": {
-                          "label": "GMV for the day",
+                          "label": "GMV Visualisation",
                           "id": "tab1",
                           "widgetId": "wyy0qvkc9a",
                           "isVisible": true,
@@ -2720,7 +2923,7 @@
                       "boxShadow": "none",
                       "widgetName": "DatePicker1",
                       "minDate": "1920-12-31T18:30:00.000Z",
-                      "dateFormat": "D MMMM, YYYY",
+                      "dateFormat": "DD-MM-YYYY",
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "searchTags": [
@@ -2736,7 +2939,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 11.9375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 43,
+                      "leftColumn": 50,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -2750,9 +2953,9 @@
                       "key": "g369skqyxv",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "defaultDate": "2022-11-11T06:25:20.694Z",
+                      "defaultDate": "2022-11-11T23:59:04.044+00:00",
                       "isDeprecated": false,
-                      "rightColumn": 57,
+                      "rightColumn": 59,
                       "widgetId": "snzgwe0c20",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -2765,9 +2968,58 @@
                       "isLoading": false,
                       "timePrecision": "minute",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "firstDayOfWeek": 0,
+                      "firstDayOfWeek": "1",
                       "closeOnSelection": true,
                       "maxDate": "2121-12-31T18:29:00.000Z"
+                    },
+                    {
+                      "widgetName": "Text7",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 16.25,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 36,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "From",
+                      "key": "u9nnwda1xt",
+                      "isDeprecated": false,
+                      "rightColumn": 39,
+                      "textAlign": "CENTER",
+                      "widgetId": "3rfwku68b6",
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "reyby7pw66",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "0.875rem"
                     }
                   ],
                   "key": "x3v5vu7euy",
@@ -2812,7 +3064,7 @@
                 "group"
               ],
               "topRow": 6,
-              "bottomRow": 24,
+              "bottomRow": 48,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
