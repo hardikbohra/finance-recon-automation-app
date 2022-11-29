@@ -285,7 +285,7 @@
                               "widgetId": "dzuajpi3pq",
                               "isDisabled": false,
                               "isVisible": true,
-                              "onClick": "{{navigateTo('Merchant Transactions', {}, 'SAME_WINDOW')}}"
+                              "onClick": "{{navigateTo('Bank Transactions', {}, 'SAME_WINDOW')}}"
                             },
                             "menuItem0033pdoejh": {
                               "id": "menuItem0033pdoejh",
