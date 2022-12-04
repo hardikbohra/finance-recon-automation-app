@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1610,
+          "bottomRow": 1570,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -506,8 +506,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 106,
-              "bottomRow": 110,
+              "topRow": 102,
+              "bottomRow": 106,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -548,8 +548,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 106,
-              "bottomRow": 110,
+              "topRow": 102,
+              "bottomRow": 106,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -597,8 +597,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 106,
-              "bottomRow": 110,
+              "topRow": 102,
+              "bottomRow": 106,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -642,8 +642,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 110,
-              "bottomRow": 153,
+              "topRow": 106,
+              "bottomRow": 149,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1186,8 +1186,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 110,
-              "bottomRow": 153,
+              "topRow": 106,
+              "bottomRow": 149,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -2000,8 +2000,8 @@
                               "widgetName": "Table1",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "GMV",
-                                "Merchant"
+                                "Merchant",
+                                "GMV"
                               ],
                               "dynamicPropertyPathList": [],
                               "compactMode": "SHORT",
@@ -3514,8 +3514,8 @@
                               "widgetName": "Table1Copy2",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "GMV",
-                                "Bank"
+                                "Bank",
+                                "GMV"
                               ],
                               "dynamicPropertyPathList": [],
                               "compactMode": "SHORT",
@@ -3912,7 +3912,8 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"green\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}"
+                          "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"green\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
+                          "outputFormat": "DD-MM-YYYY"
                         }
                       },
                       "key": "y9jn48fu4b",
@@ -4106,7 +4107,8 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"green\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}"
+                          "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"green\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
+                          "outputFormat": "DD-MM-YYYY"
                         }
                       },
                       "key": "y9jn48fu4b",
