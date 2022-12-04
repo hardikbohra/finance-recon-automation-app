@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "bank_download_payout",
+    "name": "bank_download_transactions",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "{{appsmith.store.api_server}}/nuclei-recon/banks/payout/download"
+        "url": "{{appsmith.store.api_server}}/nuclei-recon/banks/transactions/download"
       },
       "invalids": [],
       "messages": [],
@@ -33,7 +33,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"bankId\": {{b_select_bank_for_download.selectedOptionValue}},\n  \"date\": {{b_select_date_for_download.formattedDate}},\n  \"bankUserProfileMode\": {{b_select_profile_for_download.selectedOptionValue || null}}\n}",
+      "body": "{\n  \"fromDate\": \"2022-11-30\",\n  \"toDate\": \"2022-12-01\",\n  \"dateType\": \"NUCLEI_PAYMENT_DATE_TIME\",\n  \"transactionId\": [],\n  \"filters\": {\n    \"paymentStatusAtBanks\": [],\n    \"paymentStatusAtNuclei\": [],\n    \"refundStatusAtNuclei\": [],\n    \"reconciliationStatuses\": [],\n    \"reconciliationActions\": [],\n    \"conflictReasons\": [],\n    \"categoryFilter\": [],\n    \"refundReconciliationStatus\": []\n  },\n  \"banks\": [],\n  \"fileFormat\": 0\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -49,13 +49,10 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
-      },
-      {
-        "key": "body"
-      },
-      {
         "key": "headers[1].value"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
@@ -63,17 +60,14 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.store.access_token",
-      "appsmith.store.api_server",
-      "b_select_bank_for_download.selectedOptionValue",
-      "b_select_date_for_download.formattedDate",
-      "b_select_profile_for_download.selectedOptionValue || null"
+      "appsmith.store.api_server"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Bank Transactions_bank_download_payout",
+  "id": "Bank Transactions_bank_download_transactions",
   "deleted": false,
-  "gitSyncId": "638197a1d133c97eea26ace5_63859f14d133c97eea26adac"
+  "gitSyncId": "638197a1d133c97eea26ace5_63883b5ed133c97eea26ae39"
 }
