@@ -1356,7 +1356,7 @@
                   "alias": "nucleiReconciliationDateTime",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "date",
                   "textColor": "#1e3a8a",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -1373,7 +1373,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nucleiReconciliationDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+                  "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "nucleiOrderCreatedDateTime": {
                   "allowCellWrapping": false,
@@ -1556,7 +1557,7 @@
                   "alias": "merchantReconciliationDateTime",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "date",
                   "textColor": "#1e3a8a",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -1573,7 +1574,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantReconciliationDateTime\"]))}}",
                   "validation": {},
-                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+                  "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "merchantOrderDatetime": {
                   "allowCellWrapping": false,
@@ -1584,7 +1586,7 @@
                   "alias": "merchantOrderDatetime",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "date",
                   "textColor": "#1e3a8a",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -1601,7 +1603,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{tbl_merchant_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"merchantOrderDatetime\"]))}}",
                   "validation": {},
-                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+                  "outputFormat": "DD/MM/YYYY HH:mm"
                 },
                 "merchantAmountPaid": {
                   "allowCellWrapping": false,
