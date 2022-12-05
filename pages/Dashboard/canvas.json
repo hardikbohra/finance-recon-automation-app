@@ -1832,7 +1832,7 @@
                               "chartData": {
                                 "rn8hatwwuf": {
                                   "seriesName": "Cleartrip",
-                                  "data": "{{DashboardUtils.getMerchantGmvChart()}}"
+                                  "data": "{{DashboardUtils.getBankGmvChart()}}"
                                 },
                                 "i72iypu58q": {
                                   "seriesName": "Experian",
@@ -3352,7 +3352,7 @@
                               "chartData": {
                                 "rn8hatwwuf": {
                                   "seriesName": "Cleartrip",
-                                  "data": "{{DashboardUtils.getBankGmvChart()}}"
+                                  "data": "{{DashboardUtils.getMerchantGmvChart()}}"
                                 },
                                 "i72iypu58q": {
                                   "seriesName": "Experian",
