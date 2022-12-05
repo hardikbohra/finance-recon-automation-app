@@ -2258,7 +2258,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `{\n\t\"label\": \"Pay1\",\n\t\"value\": 17\n}`))(select_merchant_chart.options, select_merchant_chart.serverSideFiltering) }}",
                               "animateLoading": true,
                               "parentColumnSpace": 11.9375,
                               "dynamicTriggerPathList": [],
@@ -2272,6 +2272,9 @@
                                 },
                                 {
                                   "key": "options"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
                                 }
                               ],
                               "labelPosition": "Top",
@@ -2989,7 +2992,7 @@
                               "type": "SELECT_WIDGET",
                               "serverSideFiltering": false,
                               "hideCard": false,
-                              "defaultOptionValue": "",
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `{\n\t\"label\": \"ICICI\",\n\t\"value\": 8\n}`))(select_bank_chart.options, select_bank_chart.serverSideFiltering) }}",
                               "animateLoading": true,
                               "parentColumnSpace": 11.9375,
                               "dynamicTriggerPathList": [],
@@ -3003,6 +3006,9 @@
                                 },
                                 {
                                   "key": "options"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
                                 }
                               ],
                               "labelPosition": "Top",
@@ -3625,7 +3631,7 @@
                       "rightColumn": 64,
                       "widgetId": "5oxgjx8b3m",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "defaultTab": "",
+                      "defaultTab": "Bank wise GMV",
                       "shouldShowTabs": true,
                       "tabsObj": {
                         "tabf73hd1p50i": {
