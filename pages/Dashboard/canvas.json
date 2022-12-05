@@ -1957,7 +1957,7 @@
                                   "key": "primaryColumns.GMV.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.Merchant.computedValue"
+                                  "key": "primaryColumns.Bank.computedValue"
                                 }
                               ],
                               "leftColumn": 47,
@@ -2000,7 +2000,7 @@
                               "widgetName": "Table1",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "Merchant",
+                                "Bank",
                                 "GMV"
                               ],
                               "dynamicPropertyPathList": [],
@@ -2046,13 +2046,13 @@
                                   "validation": {},
                                   "cellBackground": ""
                                 },
-                                "Merchant": {
+                                "Bank": {
                                   "allowCellWrapping": false,
-                                  "index": 1,
+                                  "index": 0,
                                   "width": 150,
-                                  "originalId": "Merchant",
-                                  "id": "Merchant",
-                                  "alias": "Merchant",
+                                  "originalId": "Bank",
+                                  "id": "Bank",
+                                  "alias": "Bank",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "TOP",
                                   "columnType": "text",
@@ -2067,10 +2067,10 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Merchant",
+                                  "label": "Bank",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Merchant\"]))}}",
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Bank\"]))}}",
                                   "validation": {},
                                   "cellBackground": ""
                                 }
@@ -2080,7 +2080,7 @@
                               "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "0zctw2x9k7",
-                              "tableData": "{{DashboardUtils.getMerchantGmvData()}}",
+                              "tableData": "{{DashboardUtils.getBankGmvData()}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "wyy0qvkc9a",
@@ -3477,7 +3477,7 @@
                                   "key": "primaryColumns.GMV.computedValue"
                                 },
                                 {
-                                  "key": "primaryColumns.Bank.computedValue"
+                                  "key": "primaryColumns.Merchant.computedValue"
                                 }
                               ],
                               "leftColumn": 47,
@@ -3520,7 +3520,7 @@
                               "widgetName": "Table1Copy2",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "Bank",
+                                "Merchant",
                                 "GMV"
                               ],
                               "dynamicPropertyPathList": [],
@@ -3566,17 +3566,19 @@
                                   "validation": {},
                                   "cellBackground": ""
                                 },
-                                "Bank": {
+                                "Merchant": {
                                   "allowCellWrapping": false,
-                                  "index": 1,
+                                  "index": 0,
                                   "width": 150,
-                                  "originalId": "Bank",
-                                  "id": "Bank",
-                                  "alias": "Bank",
+                                  "originalId": "Merchant",
+                                  "id": "Merchant",
+                                  "alias": "Merchant",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "TOP",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -3585,11 +3587,12 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "Bank",
+                                  "label": "Merchant",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Bank\"]))}}",
-                                  "validation": {}
+                                  "computedValue": "{{Table1Copy2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Merchant\"]))}}",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "y9jn48fu4b",
@@ -3597,7 +3600,7 @@
                               "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "wbdl6k1e6k",
-                              "tableData": "{{DashboardUtils.getBankGmvData()}}",
+                              "tableData": "{{DashboardUtils.getMerchantGmvData()}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "svfpchzd6m",
