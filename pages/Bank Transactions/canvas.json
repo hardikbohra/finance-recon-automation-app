@@ -3913,7 +3913,7 @@
                       "rightColumn": 32,
                       "widgetId": "7dqpft2177",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": "{{b_select_bank_for_download.selectedOptionValue === 8}}",
+                      "isVisible": "{{b_select_bank_for_download.selectedOptionValue === 8 || b_select_bank_for_download.selectedOptionValue === 28}}",
                       "version": 1,
                       "parentId": "6oxhwh9l7t",
                       "labelAlignment": "left",
