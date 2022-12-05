@@ -3846,11 +3846,12 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 36,
+                      "bottomRow": 37,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "Bank": 233
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -3893,7 +3894,7 @@
                           "originalId": "ReconciledUpto",
                           "id": "ReconciledUpto",
                           "alias": "ReconciledUpto",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "CENTER",
                           "verticalAlignment": "TOP",
                           "columnType": "date",
                           "textColor": "",
@@ -4041,11 +4042,12 @@
                       ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
-                      "bottomRow": 36,
+                      "bottomRow": 37,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "Merchant": 220
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -4088,7 +4090,7 @@
                           "originalId": "ReconciledUpto",
                           "id": "ReconciledUpto",
                           "alias": "ReconciledUpto",
-                          "horizontalAlignment": "LEFT",
+                          "horizontalAlignment": "CENTER",
                           "verticalAlignment": "TOP",
                           "columnType": "date",
                           "textColor": "",
