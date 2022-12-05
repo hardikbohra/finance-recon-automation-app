@@ -2423,7 +2423,7 @@
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 64,
-                      "defaultSelectedValues": "BLUE",
+                      "defaultSelectedValues": "",
                       "widgetId": "zfyh64xd9x",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -2623,7 +2623,7 @@
                       "placement": "CENTER"
                     },
                     {
-                      "widgetName": "CheckboxGroup1",
+                      "widgetName": "m_select_recon_status",
                       "displayName": "Checkbox Group",
                       "iconSVG": "/static/media/icon.ecb3847950c4515966ef642a32758afb.svg",
                       "labelText": "Recon Status",
@@ -2667,7 +2667,7 @@
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 32,
-                      "defaultSelectedValues": "BLUE",
+                      "defaultSelectedValues": "",
                       "widgetId": "mhxcac46rk",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -4120,6 +4120,7 @@
                 "m_from_date.formattedDate || \"\"",
                 "m_select_bank.selectedOptionValues || [8]",
                 "m_select_merchant.selectedOptionValues || [16]",
+                "m_select_recon_status.selectedValues || []",
                 "m_select_category.selectedOptionValues || [1]"
               ],
               "timeoutInMillisecond": 30000
