@@ -3912,7 +3912,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"green\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
+                          "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
                           "outputFormat": "DD-MM-YYYY"
                         }
                       },
@@ -4107,7 +4107,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"green\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
+                          "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
                           "outputFormat": "DD-MM-YYYY"
                         }
                       },
