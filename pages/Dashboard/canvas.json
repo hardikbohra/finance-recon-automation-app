@@ -4127,7 +4127,8 @@
                           "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
                           "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
-                          "outputFormat": "DD-MM-YYYY"
+                          "outputFormat": "DD-MM-YYYY",
+                          "inputFormat": "DD/MM/YYYY"
                         }
                       },
                       "key": "y9jn48fu4b",
@@ -4323,7 +4324,8 @@
                           "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
                           "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
-                          "outputFormat": "DD-MM-YYYY"
+                          "outputFormat": "DD-MM-YYYY",
+                          "inputFormat": "DD/MM/YYYY"
                         }
                       },
                       "key": "y9jn48fu4b",
