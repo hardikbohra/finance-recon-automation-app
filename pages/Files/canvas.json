@@ -2865,7 +2865,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Activity: Delete File\nUsername: {{appsmith.store.username}}\n\nDescription: Deleted file-uid is `{{tbl_files.triggeredRow.fileUid}}`\n\n",
+                      "text": "Activity: Delete File\nUsername: {{appsmith.store.username}}\n\nDescription: Deleted file-uid is `{{tbl_files.triggeredRow.fileUid}}`\nReason of deletion: {{txt_reason.text}}\n\n",
                       "key": "rgz7ta7jav",
                       "isDeprecated": false,
                       "rightColumn": 34,
