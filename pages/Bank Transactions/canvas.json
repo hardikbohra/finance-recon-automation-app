@@ -4298,7 +4298,7 @@
                       "widgetId": "",
                       "onClick": "{{tbl_bank_transaction.selectedRowIndices.length === 0?showAlert('Please select unreconciled records.','error'):showModal('b_manual_recon')}}",
                       "isVisible": true,
-                      "isDisabled": false,
+                      "isDisabled": true,
                       "index": 0
                     },
                     "menuItembilvb0chsj": {
