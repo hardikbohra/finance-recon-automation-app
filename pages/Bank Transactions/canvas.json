@@ -4389,10 +4389,10 @@
                 "appsmith.store.access_token",
                 "b_select_nuclei_refund_stats.selectedValues || []",
                 "appsmith.store.api_server",
-                "tbl_bank_transaction.pageNo",
                 "b_from_date.formattedDate || \"\"",
                 "b_select_recon_status.selectedValues || []",
                 "b_select_category.selectedOptionValues || [1]",
+                "tbl_bank_transaction.pageNo - 1",
                 "b_select_bank.selectedOptionValues || [2]",
                 "b_to_date.formattedDate || \"\"",
                 "b_select_refund_recon_status.selectedValues || []"

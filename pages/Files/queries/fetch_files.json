@@ -50,13 +50,13 @@
     "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "headers[0].value"
-      },
-      {
         "key": "datasource.datasourceConfiguration.url"
       },
       {
         "key": "datasourceUrl"
+      },
+      {
+        "key": "headers[0].value"
       }
     ],
     "isValid": true,

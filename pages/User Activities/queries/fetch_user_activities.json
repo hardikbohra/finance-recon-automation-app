@@ -34,7 +34,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"fromDate\": \"\",\n  \"toDate\": \"\",\n  \"userActivityFilterRequest\": {\n    \"userActivity\": []\n  },\n  \"externalId\": [],\n  \"activityType\": 0,\n  \"pageNo\": {{tbl_user_activities.pageNo}},\n  \"pageSize\": 20\n}",
+      "body": "{\n  \"fromDate\": \"\",\n  \"toDate\": \"\",\n  \"userActivityFilterRequest\": {\n    \"userActivity\": []\n  },\n  \"externalId\": [],\n  \"activityType\": 0,\n  \"pageNo\": {{tbl_user_activities.pageNo - 1}},\n  \"pageSize\": 500\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -62,7 +62,7 @@
     "jsonPathKeys": [
       "appsmith.store.access_token",
       "appsmith.store.api_server",
-      "tbl_user_activities.pageNo"
+      "tbl_user_activities.pageNo - 1"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

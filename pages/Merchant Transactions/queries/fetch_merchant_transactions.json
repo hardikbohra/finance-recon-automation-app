@@ -34,7 +34,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"fromNucleiDate\": {{m_from_date.formattedDate || \"\"}},\n  \"toNucleiDate\": {{m_to_date.formattedDate || \"\"}},\n  \"orderId\": [],\n  \"filters\": {\n    \"ordersStatusAtMerchant\": [],\n    \"ordersStatusAtNuclei\": [],\n    \"refundStatusAtNuclei\": [],\n    \"reconciliationStatuses\": {{m_select_recon_status.selectedValues || []}},\n    \"reconciliationActions\": [],\n    \"conflictReasons\": [],\n    \"categoryId\": {{m_select_category.selectedOptionValues || [1]}}\n  },\n  \"merchants\": {{m_select_merchant.selectedOptionValues || [16]}},\n  \"banks\": {{m_select_bank.selectedOptionValues || [8]}},\n  \"pageNo\": 0,\n  \"pageSize\": 1000\n}",
+      "body": "{\n  \"fromNucleiDate\": {{m_from_date.formattedDate || \"\"}},\n  \"toNucleiDate\": {{m_to_date.formattedDate || \"\"}},\n  \"orderId\": [],\n  \"filters\": {\n    \"ordersStatusAtMerchant\": [],\n    \"ordersStatusAtNuclei\": [],\n    \"refundStatusAtNuclei\": [],\n    \"reconciliationStatuses\": {{m_select_recon_status.selectedValues || []}},\n    \"reconciliationActions\": [],\n    \"conflictReasons\": [],\n    \"categoryId\": {{m_select_category.selectedOptionValues || [1]}}\n  },\n  \"merchants\": {{m_select_merchant.selectedOptionValues || [16]}},\n  \"banks\": {{m_select_bank.selectedOptionValues || [8]}},\n  \"pageNo\": {{tbl_merchant_transaction.pageNo - 1}},\n  \"pageSize\": 1000\n}",
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "formData": {
@@ -61,7 +61,8 @@
       "m_select_category.selectedOptionValues || [1]",
       "m_select_merchant.selectedOptionValues || [16]",
       "m_select_recon_status.selectedValues || []",
-      "m_to_date.formattedDate || \"\""
+      "m_to_date.formattedDate || \"\"",
+      "tbl_merchant_transaction.pageNo - 1"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

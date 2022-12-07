@@ -1002,7 +1002,7 @@
                                   "originalId": "Bank Name",
                                   "id": "Bank_Name",
                                   "alias": "Bank Name",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
                                   "textColor": "",
@@ -1030,7 +1030,7 @@
                                   "originalId": "Count",
                                   "id": "Count",
                                   "alias": "Count",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
                                   "textColor": "",
@@ -1058,7 +1058,7 @@
                                   "originalId": "Amount",
                                   "id": "Amount",
                                   "alias": "Amount",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
                                   "textColor": "",
@@ -1090,7 +1090,7 @@
                               "searchKey": "",
                               "parentId": "fknrnkqvpq",
                               "renderMode": "CANVAS",
-                              "horizontalAlignment": "CENTER",
+                              "horizontalAlignment": "LEFT",
                               "isVisibleSearch": false,
                               "isVisiblePagination": false,
                               "verticalAlignment": "CENTER"
@@ -1546,7 +1546,7 @@
                                   "originalId": "Count",
                                   "id": "Count",
                                   "alias": "Count",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
                                   "textColor": "",
@@ -1574,7 +1574,7 @@
                                   "originalId": "Amount",
                                   "id": "Amount",
                                   "alias": "Amount",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
                                   "textColor": "",
@@ -1602,7 +1602,7 @@
                                   "originalId": "Merchant Name",
                                   "id": "Merchant_Name",
                                   "alias": "Merchant Name",
-                                  "horizontalAlignment": "CENTER",
+                                  "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
                                   "textSize": "0.875rem",
@@ -1631,7 +1631,7 @@
                               "searchKey": "",
                               "parentId": "obqootiarr",
                               "renderMode": "CANVAS",
-                              "horizontalAlignment": "CENTER",
+                              "horizontalAlignment": "LEFT",
                               "isVisibleSearch": false,
                               "isVisiblePagination": false,
                               "verticalAlignment": "CENTER"
@@ -4042,7 +4042,7 @@
                           "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                         }
                       },
-                      "borderRadius": "0px",
+                      "borderRadius": "0.375rem",
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -4236,7 +4236,7 @@
                           "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                         }
                       },
-                      "borderRadius": "0px",
+                      "borderRadius": "0.375rem",
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -4324,7 +4324,6 @@
                           "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
                           "validation": {},
                           "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
-                          "outputFormat": "DD-MM-YYYY",
                           "inputFormat": "DD/MM/YYYY"
                         }
                       },

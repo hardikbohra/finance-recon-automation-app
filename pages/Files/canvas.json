@@ -1207,8 +1207,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 10,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1258,13 +1258,13 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 16,
+                      "topRow": 18,
+                      "bottomRow": 22,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 16,
+                      "leftColumn": 15,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1274,7 +1274,7 @@
                       "isDisabled": false,
                       "key": "hlvvp4r64q",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 31,
                       "isDefaultClickDisabled": true,
                       "widgetId": "a3j0fakj9h",
                       "buttonStyle": "PRIMARY",
@@ -1295,15 +1295,19 @@
                       "widgetName": "model_btn_confirm",
                       "onClick": "{{FileUtils.deleteSelectedFile(tbl_files.triggeredRow.fileUid)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
                         "click",
                         "submit"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 16,
+                      "topRow": 18,
+                      "bottomRow": 22,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1312,17 +1316,20 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
+                        },
+                        {
+                          "key": "isDisabled"
                         }
                       ],
                       "text": "Confirm",
-                      "isDisabled": false,
+                      "isDisabled": "{{txt_reason.text.length < 1}}",
                       "key": "hlvvp4r64q",
                       "isDeprecated": false,
-                      "rightColumn": 49,
+                      "rightColumn": 48,
                       "isDefaultClickDisabled": true,
                       "widgetId": "lr46b0tqd9",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -1336,6 +1343,61 @@
                       "borderRadius": "0.375rem",
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "txt_reason",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 7,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 13,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "maxChars": "1000",
+                      "placeholderText": "enter the reason here",
+                      "isDisabled": false,
+                      "key": "mybm1id7td",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "isDeprecated": false,
+                      "rightColumn": 53,
+                      "widgetId": "1m0x1v2g7m",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 2,
+                      "parentId": "3s1oe19cy3",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": ""
                     }
                   ],
                   "isDisabled": false,
