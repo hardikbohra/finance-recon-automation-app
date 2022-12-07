@@ -4109,6 +4109,7 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "m_to_date.formattedDate || \"\"",
+                "tbl_merchant_transaction.pageNo - 1",
                 "appsmith.store.access_token",
                 "appsmith.store.api_server",
                 "m_from_date.formattedDate || \"\"",

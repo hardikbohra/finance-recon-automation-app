@@ -34,7 +34,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"fromDate\": {{b_from_date.formattedDate || \"\"}},\n  \"toDate\": {{b_to_date.formattedDate || \"\"}},\n  \"dateType\": \"NUCLEI_PAYMENT_DATE_TIME\",\n  \"transactionId\": [],\n  \"filters\": {\n    \"paymentStatusAtBanks\": [],\n    \"paymentStatusAtNuclei\": {{b_select_nuclei_payment_status.selectedValues || []}},\n    \"refundStatusAtNuclei\": {{b_select_nuclei_refund_stats.selectedValues || []}},\n    \"reconciliationStatuses\": {{b_select_recon_status.selectedValues || []}},\n    \"reconciliationActions\": [],\n    \"conflictReasons\": [],\n    \"categoryFilter\": {{b_select_category.selectedOptionValues || [1]}},\n    \"refundReconciliationStatus\": {{b_select_refund_recon_status.selectedValues || []}}\n  },\n  \"banks\": {{b_select_bank.selectedOptionValues || [2]}},\n  \"pageNo\": {{tbl_bank_transaction.pageNo}},\n  \"pageSize\": 1000\n}",
+      "body": "{\n  \"fromDate\": {{b_from_date.formattedDate || \"\"}},\n  \"toDate\": {{b_to_date.formattedDate || \"\"}},\n  \"dateType\": \"NUCLEI_PAYMENT_DATE_TIME\",\n  \"transactionId\": [],\n  \"filters\": {\n    \"paymentStatusAtBanks\": [],\n    \"paymentStatusAtNuclei\": {{b_select_nuclei_payment_status.selectedValues || []}},\n    \"refundStatusAtNuclei\": {{b_select_nuclei_refund_stats.selectedValues || []}},\n    \"reconciliationStatuses\": {{b_select_recon_status.selectedValues || []}},\n    \"reconciliationActions\": [],\n    \"conflictReasons\": [],\n    \"categoryFilter\": {{b_select_category.selectedOptionValues || [1]}},\n    \"refundReconciliationStatus\": {{b_select_refund_recon_status.selectedValues || []}}\n  },\n  \"banks\": {{b_select_bank.selectedOptionValues || [2]}},\n  \"pageNo\": {{tbl_bank_transaction.pageNo - 1}},\n  \"pageSize\": 1000\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -70,7 +70,7 @@
       "b_select_recon_status.selectedValues || []",
       "b_select_refund_recon_status.selectedValues || []",
       "b_to_date.formattedDate || \"\"",
-      "tbl_bank_transaction.pageNo"
+      "tbl_bank_transaction.pageNo - 1"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

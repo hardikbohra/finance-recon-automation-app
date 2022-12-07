@@ -511,15 +511,6 @@
                   "key": "primaryColumns.action.computedValue"
                 },
                 {
-                  "key": "primaryColumns.action.buttonColor"
-                },
-                {
-                  "key": "primaryColumns.action.borderRadius"
-                },
-                {
-                  "key": "primaryColumns.action.boxShadow"
-                },
-                {
                   "key": "accentColor"
                 },
                 {
@@ -688,11 +679,11 @@
                   "alias": "action",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "button",
+                  "columnType": "text",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isCellVisible": true,
                   "isCellEditable": false,
                   "isDisabled": false,
@@ -702,12 +693,10 @@
                   "computedValue": "{{tbl_user_activities.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
                   "validation": {},
                   "labelColor": "#FFFFFF",
-                  "buttonColor": "{{tbl_user_activities.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{tbl_user_activities.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{tbl_user_activities.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "buttonLabel": "{{tbl_user_activities.processedTableData.map((currentRow, currentIndex) => ( 'Action'))}}",
                   "textColor": "#1e3a8a",
-                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
+                  "customAlias": ""
                 },
                 "activityDate": {
                   "allowCellWrapping": false,
@@ -878,9 +867,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "tbl_user_activities.pageNo",
                 "appsmith.store.access_token",
-                "appsmith.store.api_server"
+                "appsmith.store.api_server",
+                "tbl_user_activities.pageNo - 1"
               ],
               "timeoutInMillisecond": 10000
             }

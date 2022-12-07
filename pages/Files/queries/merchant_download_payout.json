@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "delete_file",
+    "name": "merchant_download_payout",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "{{appsmith.store.api_server}}/nuclei-recon/files/{{appsmith.store.deleteFileUid}}"
+        "url": "{{appsmith.store.api_server}}/nuclei-recon/merchant/payout/download"
       },
       "invalids": [],
       "messages": [],
@@ -23,24 +23,19 @@
       "path": "",
       "headers": [
         {
-          "key": "Authorization",
-          "value": "{{appsmith.store.access_token}}"
+          "key": "content-type",
+          "value": "application/json"
         },
         {
-          "key": "content-type",
-          "value": "text/plain"
+          "key": "Authorization",
+          "value": "{{appsmith.store.access_token}}"
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [
-        {
-          "key": "reason",
-          "value": "{{txt_reason.text}}"
-        }
-      ],
-      "body": "",
+      "queryParameters": [],
+      "body": "{\n  \"bankId\": {{b_select_bank_or_merchant.selectedOptionValue}},\n  \"date\": {{b_select_date_for_download.formattedDate}},\n  \"bankUserProfileMode\": {{b_select_profile_for_download.selectedOptionValue || null}}\n}",
       "bodyFormData": [],
-      "httpMethod": "DELETE",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -48,22 +43,19 @@
         }
       ],
       "formData": {
-        "apiContentType": "text/plain"
+        "apiContentType": "application/json"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "path"
+        "key": "body"
+      },
+      {
+        "key": "headers[1].value"
       },
       {
         "key": "datasourceUrl"
-      },
-      {
-        "key": "headers[0].value"
-      },
-      {
-        "key": "queryParameters[0].value"
       }
     ],
     "isValid": true,
@@ -72,15 +64,16 @@
     "jsonPathKeys": [
       "appsmith.store.access_token",
       "appsmith.store.api_server",
-      "appsmith.store.deleteFileUid",
-      "txt_reason.text"
+      "b_select_bank_or_merchant.selectedOptionValue",
+      "b_select_date_for_download.formattedDate",
+      "b_select_profile_for_download.selectedOptionValue || null"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Files_delete_file",
+  "id": "Files_merchant_download_payout",
   "deleted": false,
-  "gitSyncId": "638197a1d133c97eea26ace5_63843478d133c97eea26ad5d"
+  "gitSyncId": "638ed972d133c97eea26b027_639015ccd133c97eea26b0b4"
 }
