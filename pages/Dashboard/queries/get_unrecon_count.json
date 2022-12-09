@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_recon_upto",
+    "name": "get_unrecon_count",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -21,7 +21,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/api/nuclei-recon/dashboard/reconUpto",
+      "path": "/api/nuclei-recon/dashboard/unreconciledCount",
       "headers": [
         {
           "key": "content-type",
@@ -33,7 +33,16 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "from_date",
+          "value": "{{unrecon_count_from_date.formattedDate}}"
+        },
+        {
+          "key": "to_date",
+          "value": "{{unrecon_count_to_date.formattedDate}}"
+        }
+      ],
       "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
@@ -51,20 +60,28 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[1].value"
+      },
+      {
+        "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.access_token"
+      "appsmith.store.access_token",
+      "unrecon_count_from_date.formattedDate",
+      "unrecon_count_to_date.formattedDate"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_get_recon_upto",
+  "id": "Dashboard_get_unrecon_count",
   "deleted": false,
-  "gitSyncId": "638ed972d133c97eea26b027_6392d509d133c97eea26b0c2"
+  "gitSyncId": "638ed972d133c97eea26b027_6392ea4cd133c97eea26b0c8"
 }
