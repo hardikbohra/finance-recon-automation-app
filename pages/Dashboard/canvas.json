@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1570,
+          "bottomRow": 1540,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -506,8 +506,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 102,
-              "bottomRow": 106,
+              "topRow": 99,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -548,8 +548,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 102,
-              "bottomRow": 106,
+              "topRow": 99,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -597,8 +597,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 102,
-              "bottomRow": 106,
+              "topRow": 99,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -642,8 +642,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 106,
-              "bottomRow": 149,
+              "topRow": 103,
+              "bottomRow": 146,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1186,8 +1186,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 106,
-              "bottomRow": 149,
+              "topRow": 103,
+              "bottomRow": 146,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1728,7 +1728,7 @@
                 "group"
               ],
               "topRow": 46,
-              "bottomRow": 102,
+              "bottomRow": 99,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -1743,7 +1743,7 @@
                   "widgetName": "Canvas12",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 550,
+                  "bottomRow": 530,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1768,7 +1768,7 @@
                       "displayName": "Tabs",
                       "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
                       "topRow": 0,
-                      "bottomRow": 53,
+                      "bottomRow": 51,
                       "parentRowSpace": 10,
                       "type": "TABS_WIDGET",
                       "hideCard": false,
@@ -2469,7 +2469,7 @@
                           "widgetName": "Canvas14",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 490,
+                          "bottomRow": 470,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": true,
@@ -2497,8 +2497,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 1,
-                              "bottomRow": 5,
+                              "topRow": 0,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2547,8 +2547,8 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "topRow": 1,
-                              "bottomRow": 5,
+                              "topRow": 0,
+                              "bottomRow": 4,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
@@ -2599,8 +2599,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 1,
-                              "bottomRow": 5,
+                              "topRow": 0,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2649,8 +2649,8 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "topRow": 1,
-                              "bottomRow": 5,
+                              "topRow": 0,
+                              "bottomRow": 4,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
@@ -2697,7 +2697,7 @@
                               "borderColor": "#E0DEDE",
                               "isVisibleDownload": true,
                               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-                              "topRow": 6,
+                              "topRow": 4,
                               "isSortable": true,
                               "type": "TABLE_WIDGET_V2",
                               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -2775,6 +2775,7 @@
                               ],
                               "leftColumn": 0,
                               "delimiter": ",",
+                              "variant": "DEFAULT",
                               "defaultSelectedRowIndex": 0,
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": false,
@@ -2828,7 +2829,7 @@
                               "dynamicPropertyPathList": [],
                               "compactMode": "SHORT",
                               "displayName": "Table",
-                              "bottomRow": 47,
+                              "bottomRow": 45,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 62,
@@ -4000,13 +4001,10 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.Bank.computedValue"
+                          "key": "primaryColumns.id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.ReconciledUpto.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.ReconciledUpto.cellBackground"
+                          "key": "primaryColumns.reconUpto.computedValue"
                         }
                       ],
                       "leftColumn": 42,
@@ -4049,14 +4047,10 @@
                       "widgetName": "Table1Copy1",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "Bank",
-                        "ReconciledUpto"
+                        "id",
+                        "reconUpto"
                       ],
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "primaryColumns.ReconciledUpto.cellBackground"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 37,
@@ -4072,16 +4066,16 @@
                       "dynamicTriggerPathList": [],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "Bank": {
+                        "id": {
                           "allowCellWrapping": false,
-                          "index": 1,
+                          "index": 0,
                           "width": 150,
-                          "originalId": "Bank",
-                          "id": "Bank",
-                          "alias": "Bank",
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "TOP",
-                          "columnType": "text",
+                          "columnType": "number",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "fontStyle": "",
@@ -4096,18 +4090,18 @@
                           "label": "Bank",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Bank\"]))}}",
+                          "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "ReconciledUpto": {
+                        "reconUpto": {
                           "allowCellWrapping": false,
                           "index": 1,
                           "width": 150,
-                          "originalId": "ReconciledUpto",
-                          "id": "ReconciledUpto",
-                          "alias": "ReconciledUpto",
-                          "horizontalAlignment": "CENTER",
+                          "originalId": "reconUpto",
+                          "id": "reconUpto",
+                          "alias": "reconUpto",
+                          "horizontalAlignment": "LEFT",
                           "verticalAlignment": "TOP",
                           "columnType": "date",
                           "textColor": "",
@@ -4121,14 +4115,13 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ReconciledUpto",
+                          "label": "ReconUpto",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
+                          "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reconUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
-                          "outputFormat": "DD-MM-YYYY",
-                          "inputFormat": "DD/MM/YYYY"
+                          "cellBackground": "",
+                          "outputFormat": "Do MMM YYYY"
                         }
                       },
                       "key": "y9jn48fu4b",
@@ -4136,7 +4129,7 @@
                       "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "zf63e59p9c",
-                      "tableData": "{{DashboardUtils.getBankReconciledUpto()}}",
+                      "tableData": "{{get_recon_upto.data.data.bankReconUptoData || []}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "ae3uqowauj",
@@ -4194,13 +4187,10 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.Merchant.computedValue"
+                          "key": "primaryColumns.id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.ReconciledUpto.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.ReconciledUpto.cellBackground"
+                          "key": "primaryColumns.reconUpto.computedValue"
                         }
                       ],
                       "leftColumn": 22,
@@ -4243,15 +4233,12 @@
                       "widgetName": "Table1Copy",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "Merchant",
-                        "ReconciledUpto"
+                        "id",
+                        "reconUpto"
                       ],
                       "dynamicPropertyPathList": [
                         {
                           "key": "cellBackground"
-                        },
-                        {
-                          "key": "primaryColumns.ReconciledUpto.cellBackground"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -4269,16 +4256,16 @@
                       "dynamicTriggerPathList": [],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "Merchant": {
+                        "id": {
                           "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "originalId": "Merchant",
-                          "id": "Merchant",
-                          "alias": "Merchant",
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "TOP",
-                          "columnType": "text",
+                          "columnType": "number",
                           "textColor": "",
                           "textSize": "0.875rem",
                           "fontStyle": "",
@@ -4293,18 +4280,18 @@
                           "label": "Merchant",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Merchant\"]))}}",
+                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                           "validation": {},
                           "cellBackground": ""
                         },
-                        "ReconciledUpto": {
+                        "reconUpto": {
                           "allowCellWrapping": false,
                           "index": 1,
                           "width": 150,
-                          "originalId": "ReconciledUpto",
-                          "id": "ReconciledUpto",
-                          "alias": "ReconciledUpto",
-                          "horizontalAlignment": "CENTER",
+                          "originalId": "reconUpto",
+                          "id": "reconUpto",
+                          "alias": "reconUpto",
+                          "horizontalAlignment": "LEFT",
                           "verticalAlignment": "TOP",
                           "columnType": "date",
                           "textColor": "",
@@ -4318,13 +4305,13 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ReconciledUpto",
+                          "label": "ReconUpto",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ReconciledUpto\"]))}}",
+                          "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reconUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow.ReconciledUpto=== \"04-12-2022\" ? \"#32CD32\" : currentRow.ReconciledUpto === \"03-12-2022\" ? \"orange\" : \"red\"))}}",
-                          "inputFormat": "DD/MM/YYYY"
+                          "cellBackground": "",
+                          "outputFormat": "Do MMM YYYY"
                         }
                       },
                       "key": "y9jn48fu4b",
@@ -4332,7 +4319,7 @@
                       "rightColumn": 42,
                       "textSize": "0.875rem",
                       "widgetId": "qgru24ijdf",
-                      "tableData": "{{DashboardUtils.getMerchantReconciledUpto()}}",
+                      "tableData": "{{get_recon_upto.data.data.merchantReconUptoData || []}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "ae3uqowauj",
@@ -5352,6 +5339,18 @@
             {
               "id": "Dashboard_static_data",
               "name": "static_data",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Dashboard_get_recon_upto",
+              "name": "get_recon_upto",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [

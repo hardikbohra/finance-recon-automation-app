@@ -2839,7 +2839,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 7,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -2868,7 +2868,7 @@
                       "text": "Activity: Delete File\nUsername: {{appsmith.store.username}}\n\nDescription: Deleted file-uid is `{{tbl_files.triggeredRow.fileUid}}`\nReason of deletion: {{txt_reason.text}}\n\n",
                       "key": "rgz7ta7jav",
                       "isDeprecated": false,
-                      "rightColumn": 34,
+                      "rightColumn": 22,
                       "textAlign": "LEFT",
                       "widgetId": "y7axk9uwkv",
                       "isVisible": false,
