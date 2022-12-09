@@ -614,7 +614,7 @@
                               "chartData": {
                                 "rn8hatwwuf": {
                                   "seriesName": "Cleartrip",
-                                  "data": "{{DashboardUtils.getBankGmvChart()}}"
+                                  "data": ""
                                 },
                                 "i72iypu58q": {
                                   "seriesName": "Experian",
@@ -664,9 +664,6 @@
                                 },
                                 {
                                   "key": "fontFamily"
-                                },
-                                {
-                                  "key": "chartData.rn8hatwwuf.data"
                                 }
                               ],
                               "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": [\n      {\n        \"label\": \"AU\",\n        \"value\": {\n\t\t\t\t\"x\": 200,\n\t\t\t\t\"y\": \"CT\"\n\t\t\t\t}\n      },\n      {\n        \"label\": \"Product2\",\n        \"value\": 22000\n      },\n      {\n        \"label\": \"Product3\",\n        \"value\": 32000\n      }\n    ],\n    \"chart\": {\n      \"caption\": \"Sales Report\",\n      \"xAxisName\": \"Product Line\",\n      \"yAxisName\": \"Revenue($)\",\n      \"theme\": \"fusion\",\n      \"alignCaptionWithCanvas\": 1,\n      \"captionFontSize\": \"24\",\n      \"captionAlignment\": \"center\",\n      \"captionPadding\": \"20\",\n      \"captionFontColor\": \"#231F20\",\n      \"legendIconSides\": \"4\",\n      \"legendIconBgAlpha\": \"100\",\n      \"legendIconAlpha\": \"100\",\n      \"legendPosition\": \"top\",\n      \"canvasPadding\": \"0\",\n      \"chartLeftMargin\": \"20\",\n      \"chartTopMargin\": \"10\",\n      \"chartRightMargin\": \"40\",\n      \"chartBottomMargin\": \"10\",\n      \"xAxisNameFontSize\": \"14\",\n      \"labelFontSize\": \"12\",\n      \"labelFontColor\": \"#716E6E\",\n      \"xAxisNameFontColor\": \"#716E6E\",\n      \"yAxisNameFontSize\": \"14\",\n      \"yAxisValueFontSize\": \"12\",\n      \"yAxisValueFontColor\": \"#716E6E\",\n      \"yAxisNameFontColor\": \"#716E6E\"\n    }\n  }\n}",
@@ -731,9 +728,6 @@
                                 },
                                 {
                                   "key": "childStylesheet.editActions.discardBorderRadius"
-                                },
-                                {
-                                  "key": "tableData"
                                 },
                                 {
                                   "key": "primaryColumns.GMV.computedValue"
@@ -862,7 +856,7 @@
                               "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "0zctw2x9k7",
-                              "tableData": "{{DashboardUtils.getBankGmvData()}}",
+                              "tableData": "",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "wyy0qvkc9a",
@@ -2350,7 +2344,7 @@
                               "chartData": {
                                 "rn8hatwwuf": {
                                   "seriesName": "Cleartrip",
-                                  "data": "{{DashboardUtils.getMerchantGmvChart()}}"
+                                  "data": ""
                                 },
                                 "i72iypu58q": {
                                   "seriesName": "Experian",
@@ -2400,9 +2394,6 @@
                                 },
                                 {
                                   "key": "fontFamily"
-                                },
-                                {
-                                  "key": "chartData.rn8hatwwuf.data"
                                 }
                               ],
                               "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": [\n      {\n        \"label\": \"AU\",\n        \"value\": {\n\t\t\t\t\"x\": 200,\n\t\t\t\t\"y\": \"CT\"\n\t\t\t\t}\n      },\n      {\n        \"label\": \"Product2\",\n        \"value\": 22000\n      },\n      {\n        \"label\": \"Product3\",\n        \"value\": 32000\n      }\n    ],\n    \"chart\": {\n      \"caption\": \"Sales Report\",\n      \"xAxisName\": \"Product Line\",\n      \"yAxisName\": \"Revenue($)\",\n      \"theme\": \"fusion\",\n      \"alignCaptionWithCanvas\": 1,\n      \"captionFontSize\": \"24\",\n      \"captionAlignment\": \"center\",\n      \"captionPadding\": \"20\",\n      \"captionFontColor\": \"#231F20\",\n      \"legendIconSides\": \"4\",\n      \"legendIconBgAlpha\": \"100\",\n      \"legendIconAlpha\": \"100\",\n      \"legendPosition\": \"top\",\n      \"canvasPadding\": \"0\",\n      \"chartLeftMargin\": \"20\",\n      \"chartTopMargin\": \"10\",\n      \"chartRightMargin\": \"40\",\n      \"chartBottomMargin\": \"10\",\n      \"xAxisNameFontSize\": \"14\",\n      \"labelFontSize\": \"12\",\n      \"labelFontColor\": \"#716E6E\",\n      \"xAxisNameFontColor\": \"#716E6E\",\n      \"yAxisNameFontSize\": \"14\",\n      \"yAxisValueFontSize\": \"12\",\n      \"yAxisValueFontColor\": \"#716E6E\",\n      \"yAxisNameFontColor\": \"#716E6E\"\n    }\n  }\n}",
@@ -2467,9 +2458,6 @@
                                 },
                                 {
                                   "key": "childStylesheet.editActions.discardBorderRadius"
-                                },
-                                {
-                                  "key": "tableData"
                                 },
                                 {
                                   "key": "primaryColumns.GMV.computedValue"
@@ -2598,7 +2586,7 @@
                               "rightColumn": 64,
                               "textSize": "0.875rem",
                               "widgetId": "wbdl6k1e6k",
-                              "tableData": "{{DashboardUtils.getMerchantGmvData()}}",
+                              "tableData": "",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "svfpchzd6m",
