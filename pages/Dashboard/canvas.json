@@ -4005,6 +4005,9 @@
                         },
                         {
                           "key": "primaryColumns.reconUpto.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.reconUpto.cellBackground"
                         }
                       ],
                       "leftColumn": 42,
@@ -4050,7 +4053,11 @@
                         "id",
                         "reconUpto"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "primaryColumns.reconUpto.cellBackground"
+                        }
+                      ],
                       "compactMode": "SHORT",
                       "displayName": "Table",
                       "bottomRow": 37,
@@ -4120,7 +4127,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reconUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "{{Table1Copy1.processedTableData.map((currentRow, currentIndex) => ( (new Date(currentRow.reconUpto).toDateString() === new Date(new Date().setDate(new Date().getDate() - 1)).toDateString()) ? \"#B6FF9F\" : (new Date(currentRow.reconUpto).toDateString() === new Date(new Date().setDate(new Date().getDate() - 2)).toDateString()) ? \"#FEF9C3\" : \"#FF9393\"))}}",
                           "outputFormat": "Do MMM YYYY"
                         }
                       },
@@ -4187,10 +4194,13 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.id.computedValue"
+                          "key": "primaryColumns.reconUpto.computedValue"
                         },
                         {
-                          "key": "primaryColumns.reconUpto.computedValue"
+                          "key": "primaryColumns.reconUpto.cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.id.computedValue"
                         }
                       ],
                       "leftColumn": 22,
@@ -4239,6 +4249,9 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "cellBackground"
+                        },
+                        {
+                          "key": "primaryColumns.reconUpto.cellBackground"
                         }
                       ],
                       "compactMode": "SHORT",
@@ -4310,7 +4323,7 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reconUpto\"]))}}",
                           "validation": {},
-                          "cellBackground": "",
+                          "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( (new Date(currentRow.reconUpto).toDateString() === new Date(new Date().setDate(new Date().getDate() - 1)).toDateString()) ? \"#B6FF9F\" : (new Date(currentRow.reconUpto).toDateString() === new Date(new Date().setDate(new Date().getDate() - 2)).toDateString()) ? \"#FEF9C3\" : \"#FF9393\"))}}",
                           "outputFormat": "Do MMM YYYY"
                         }
                       },
