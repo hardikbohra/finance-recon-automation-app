@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\t\n\t\n\t\n  isCurrentPage: (page) => {\n    if(appsmith.store.page === page) return true;\n    return false;\n  },\n  \n  setCurrentPage: (page) => {\n    storeValue('page', page);\n    navigateTo(page);\n  },\n\t\n\tget_bank_unrecon_count_chart: () => {\n\t\treturn get_unrecon_count.data.data.bankUnreconciledCount.map(data => ({ label: data.name, value: data.count }));\n\t}\n\t\n}",
+    "body": "export default {\n  isCurrentPage: (page) => {\n    if(appsmith.store.page === page) return true;\n    return false;\n  },\n  \n  setCurrentPage: (page) => {\n    storeValue('page', page);\n    navigateTo(page);\n  }\n\t\n}",
     "variables": [],
     "userPermissions": []
   },
