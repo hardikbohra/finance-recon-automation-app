@@ -4010,6 +4010,9 @@
                 },
                 {
                   "key": "isDisabled"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "displayName": "Button Group",
@@ -4083,6 +4086,9 @@
                 },
                 {
                   "key": "groupButtons.groupButton3.buttonColor"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "isDisabled": "",
@@ -4091,7 +4097,7 @@
               "isDeprecated": false,
               "rightColumn": 64,
               "widgetId": "3sn9fce538",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",

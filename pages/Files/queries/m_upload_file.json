@@ -7,8 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "{{appsmith.store.api_server}}/nuclei-recon/files/"
+        "url": "{{appsmith.store.api_server}}/nuclei-recon/merchant-recon/files/preProcess"
       },
       "invalids": [],
       "messages": [],
@@ -74,9 +73,6 @@
         "key": "path"
       },
       {
-        "key": "datasourceUrl"
-      },
-      {
         "key": "bodyFormData[0].value"
       },
       {
@@ -87,6 +83,9 @@
       },
       {
         "key": "bodyFormData[2].value"
+      },
+      {
+        "key": "datasourceUrl"
       },
       {
         "key": "headers[0].value"

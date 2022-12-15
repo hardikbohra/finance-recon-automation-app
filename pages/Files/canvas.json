@@ -2902,13 +2902,7 @@
                       "isCanvas": false,
                       "dynamicPropertyPathList": [
                         {
-                          "key": "groupButtons.groupButton1.isVisible"
-                        },
-                        {
-                          "key": "groupButtons.groupButton2.isVisible"
-                        },
-                        {
-                          "key": "groupButtons.groupButton3.isVisible"
+                          "key": "isVisible"
                         }
                       ],
                       "displayName": "Button Group",
@@ -2928,7 +2922,7 @@
                           "widgetId": "",
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
-                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
+                          "isVisible": true,
                           "isDisabled": false,
                           "index": 0,
                           "menuItems": {},
@@ -2942,7 +2936,7 @@
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
                           "widgetId": "",
-                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
+                          "isVisible": true,
                           "isDisabled": false,
                           "index": 1,
                           "menuItems": {},
@@ -2956,7 +2950,7 @@
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
                           "widgetId": "",
-                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
+                          "isVisible": true,
                           "isDisabled": false,
                           "index": 2,
                           "menuItems": {
@@ -3032,13 +3026,7 @@
                           "key": "groupButtons.groupButton3.buttonColor"
                         },
                         {
-                          "key": "groupButtons.groupButton1.isVisible"
-                        },
-                        {
-                          "key": "groupButtons.groupButton2.isVisible"
-                        },
-                        {
-                          "key": "groupButtons.groupButton3.isVisible"
+                          "key": "isVisible"
                         }
                       ],
                       "key": "3p5jphhlmu",
@@ -3046,7 +3034,7 @@
                       "isDeprecated": false,
                       "rightColumn": 23,
                       "widgetId": "rq7t5zlu6l",
-                      "isVisible": true,
+                      "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
                       "version": 1,
                       "parentId": "rtmd6jdcmf",
                       "renderMode": "CANVAS",
