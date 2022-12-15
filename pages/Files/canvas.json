@@ -283,6 +283,9 @@
                         },
                         {
                           "key": "groupButtons.groupButton1.menuItems.menuItem3ub3q0ik2j.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButtonpfy7cnz4fh.isVisible"
                         }
                       ],
                       "displayName": "Button Group",
@@ -384,7 +387,7 @@
                           "placement": "CENTER",
                           "widgetId": "gtayj01ap6",
                           "isDisabled": false,
-                          "isVisible": true,
+                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV')}}",
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "iconName": "clipboard",
                           "onClick": "{{storeValue('page', 'User Activities');navigateTo('User Activities')}}"
@@ -445,6 +448,9 @@
                         },
                         {
                           "key": "groupButtons.groupButton2.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButtonpfy7cnz4fh.isVisible"
                         }
                       ],
                       "key": "5cj9izmc6h",
@@ -2169,7 +2175,7 @@
                         }
                       ],
                       "labelPosition": "Auto",
-                      "options": "[\n  {\n    \"label\": \"Bank Payment Payout\",\n    \"value\": \"BANK_PAYMENTS_PAYOUT\"\n  },\n  {\n    \"label\": \"Bank Refund Payout\",\n    \"value\": \"BANK_REFUNDS_PAYOUT\"\n  },\n  {\n    \"label\": \"Merchant Payment Payout\",\n    \"value\": \"MERCHANT_PAYMENTS_PAYOUT\"\n  },\n  {\n    \"label\": \"Merchant Refund Payout\",\n    \"value\": \"MERCHANT_REFUNDS_PAYOUT\"\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"Bank Payment Payout\",\n    \"value\": \"BANK_PAYMENTS_PAYOUT\"\n  },\n  {\n    \"label\": \"Bank Refund Payout\",\n    \"value\": \"BANK_REFUNDS_PAYOUT\"\n  },\n  {\n    \"label\": \"Merchant Payment Statement\",\n    \"value\": \"MERCHANT_WALLET_STATEMENT\"\n  },\n  {\n    \"label\": \"Merchant Refund Statement\",\n    \"value\": \"MERCHANT_REFUNDS_STATEMENT\"\n  },\n  {\n    \"label\": \"Merchant Prepaid Statement\",\n    \"value\": \"MERCHANT_WALLET_STATEMENT_PREPAID\"\n  },\n  {\n    \"label\": \"Merchant Postpaid Statement\",\n    \"value\": \"MERCHANT_WALLET_STATEMENT_POSTPAID\"\n  }\n]",
                       "labelStyle": "BOLD",
                       "placeholderText": "Select option",
                       "isDisabled": false,
@@ -2894,6 +2900,17 @@
                       "boxShadow": "none",
                       "widgetName": "ButtonGroup3",
                       "isCanvas": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "groupButtons.groupButton1.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3.isVisible"
+                        }
+                      ],
                       "displayName": "Button Group",
                       "iconSVG": "/static/media/icon.d6773218cfb61dcfa5f460d43371e30d.svg",
                       "searchTags": [
@@ -2911,7 +2928,7 @@
                           "widgetId": "",
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
-                          "isVisible": true,
+                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
                           "isDisabled": false,
                           "index": 0,
                           "menuItems": {},
@@ -2925,7 +2942,7 @@
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
                           "widgetId": "",
-                          "isVisible": true,
+                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
                           "isDisabled": false,
                           "index": 1,
                           "menuItems": {},
@@ -2939,7 +2956,7 @@
                           "buttonType": "SIMPLE",
                           "placement": "CENTER",
                           "widgetId": "",
-                          "isVisible": true,
+                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV') || appsmith.store.role.includes('ROLE_FINANCE')}}",
                           "isDisabled": false,
                           "index": 2,
                           "menuItems": {
@@ -3013,6 +3030,15 @@
                         },
                         {
                           "key": "groupButtons.groupButton3.buttonColor"
+                        },
+                        {
+                          "key": "groupButtons.groupButton1.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton2.isVisible"
+                        },
+                        {
+                          "key": "groupButtons.groupButton3.isVisible"
                         }
                       ],
                       "key": "3p5jphhlmu",

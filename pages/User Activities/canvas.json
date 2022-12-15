@@ -283,6 +283,9 @@
                         },
                         {
                           "key": "groupButtons.groupButton1.menuItems.menuItem3ub3q0ik2j.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButtonpfy7cnz4fh.isVisible"
                         }
                       ],
                       "displayName": "Button Group",
@@ -384,7 +387,7 @@
                           "placement": "CENTER",
                           "widgetId": "gtayj01ap6",
                           "isDisabled": false,
-                          "isVisible": true,
+                          "isVisible": "{{appsmith.store.role.includes('ROLE_ADMIN') || appsmith.store.role.includes('ROLE_DEV')}}",
                           "buttonColor": "#1e3a8a",
                           "iconName": "clipboard",
                           "onClick": "{{storeValue('page', 'User Activities');navigateTo('User Activities')}}"
@@ -445,6 +448,9 @@
                         },
                         {
                           "key": "groupButtons.groupButton2.onClick"
+                        },
+                        {
+                          "key": "groupButtons.groupButtonpfy7cnz4fh.isVisible"
                         }
                       ],
                       "key": "5cj9izmc6h",

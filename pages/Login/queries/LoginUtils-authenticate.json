@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  login.run(() => {\n    storeValue('username', login.data.username, true);\n    storeValue('access_token', login.data.accessToken, true);\n    storeValue('api_server', 'https://preprod-az.gonuclei.com/api');\n    navigateTo('Dashboard', {}, 'SAME_WINDOW');\n  }, () => showAlert('Invalid Credentials', 'error'));\n}",
+      "body": "() => {\n  login.run(() => {\n    storeValue('username', login.data.username, true);\n    storeValue('role', login.data.roles);\n    storeValue('access_token', login.data.accessToken, true);\n    storeValue('api_server', 'https://preprod-az.gonuclei.com/api');\n    navigateTo('Dashboard', {}, 'SAME_WINDOW');\n  }, () => showAlert('Invalid Credentials', 'error'));\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  login.run(() => {\n    storeValue('username', login.data.username, true);\n    storeValue('access_token', login.data.accessToken, true);\n    storeValue('api_server', 'https://preprod-az.gonuclei.com/api');\n    navigateTo('Dashboard', {}, 'SAME_WINDOW');\n  }, () => showAlert('Invalid Credentials', 'error'));\n}"
+      "() => {\n  login.run(() => {\n    storeValue('username', login.data.username, true);\n    storeValue('role', login.data.roles);\n    storeValue('access_token', login.data.accessToken, true);\n    storeValue('api_server', 'https://preprod-az.gonuclei.com/api');\n    navigateTo('Dashboard', {}, 'SAME_WINDOW');\n  }, () => showAlert('Invalid Credentials', 'error'));\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
