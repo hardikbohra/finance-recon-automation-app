@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "upload_file",
+    "name": "b_upload_file",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -86,10 +86,10 @@
         "key": "bodyFormData[3].value"
       },
       {
-        "key": "headers[0].value"
+        "key": "bodyFormData[2].value"
       },
       {
-        "key": "bodyFormData[2].value"
+        "key": "headers[0].value"
       }
     ],
     "isValid": true,
@@ -108,7 +108,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Files_upload_file",
+  "id": "Files_b_upload_file",
   "deleted": false,
   "gitSyncId": "638197a1d133c97eea26ace5_638197a2d133c97eea26ad07"
 }

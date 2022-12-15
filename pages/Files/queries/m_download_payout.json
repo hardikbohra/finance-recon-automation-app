@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "bank_download_payout",
+    "name": "m_download_payout",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "{{appsmith.store.api_server}}/nuclei-recon/banks/payout/download"
+        "url": "{{appsmith.store.api_server}}/nuclei-recon/merchant/payout/download"
       },
       "invalids": [],
       "messages": [],
@@ -49,13 +49,13 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
-      },
-      {
         "key": "body"
       },
       {
         "key": "headers[1].value"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
@@ -73,7 +73,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Files_bank_download_payout",
+  "id": "Files_m_download_payout",
   "deleted": false,
-  "gitSyncId": "638ed972d133c97eea26b027_63901439d133c97eea26b0b2"
+  "gitSyncId": "638ed972d133c97eea26b027_639015ccd133c97eea26b0b4"
 }

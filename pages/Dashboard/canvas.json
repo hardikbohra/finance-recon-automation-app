@@ -5321,16 +5321,19 @@
                                           "key": "childStylesheet.editActions.discardBorderRadius"
                                         },
                                         {
-                                          "key": "primaryColumns.Count.computedValue"
-                                        },
-                                        {
-                                          "key": "primaryColumns.Amount.computedValue"
-                                        },
-                                        {
-                                          "key": "primaryColumns.Merchant_Name.computedValue"
-                                        },
-                                        {
                                           "key": "tableData"
+                                        },
+                                        {
+                                          "key": "primaryColumns.id.computedValue"
+                                        },
+                                        {
+                                          "key": "primaryColumns.name.computedValue"
+                                        },
+                                        {
+                                          "key": "primaryColumns.count.computedValue"
+                                        },
+                                        {
+                                          "key": "primaryColumns.amount.computedValue"
                                         }
                                       ],
                                       "leftColumn": 0,
@@ -5373,9 +5376,10 @@
                                       "widgetName": "merchant_wise_unrecon_data",
                                       "defaultPageSize": 0,
                                       "columnOrder": [
-                                        "Merchant_Name",
-                                        "Count",
-                                        "Amount"
+                                        "id",
+                                        "name",
+                                        "count",
+                                        "amount"
                                       ],
                                       "dynamicPropertyPathList": [],
                                       "compactMode": "SHORT",
@@ -5395,13 +5399,41 @@
                                       "dynamicTriggerPathList": [],
                                       "borderWidth": "1",
                                       "primaryColumns": {
-                                        "Count": {
+                                        "id": {
                                           "allowCellWrapping": false,
-                                          "index": 3,
+                                          "index": 0,
                                           "width": 150,
-                                          "originalId": "Count",
-                                          "id": "Count",
-                                          "alias": "Count",
+                                          "originalId": "id",
+                                          "id": "id",
+                                          "alias": "id",
+                                          "horizontalAlignment": "LEFT",
+                                          "verticalAlignment": "CENTER",
+                                          "columnType": "number",
+                                          "textColor": "",
+                                          "textSize": "0.875rem",
+                                          "fontStyle": "",
+                                          "enableFilter": true,
+                                          "enableSort": true,
+                                          "isVisible": false,
+                                          "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
+                                          "isCellVisible": true,
+                                          "isDerived": false,
+                                          "label": "id",
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                                          "validation": {},
+                                          "cellBackground": ""
+                                        },
+                                        "name": {
+                                          "allowCellWrapping": false,
+                                          "index": 1,
+                                          "width": 150,
+                                          "originalId": "name",
+                                          "id": "name",
+                                          "alias": "name",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
                                           "columnType": "text",
@@ -5416,52 +5448,26 @@
                                           "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
-                                          "label": "Count",
+                                          "label": "name",
                                           "isSaveVisible": true,
                                           "isDiscardVisible": true,
-                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Count\"]))}}",
+                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
                                           "validation": {},
                                           "cellBackground": ""
                                         },
-                                        "Amount": {
-                                          "allowCellWrapping": false,
-                                          "index": 3,
-                                          "width": 150,
-                                          "originalId": "Amount",
-                                          "id": "Amount",
-                                          "alias": "Amount",
-                                          "horizontalAlignment": "LEFT",
-                                          "verticalAlignment": "CENTER",
-                                          "columnType": "text",
-                                          "textColor": "",
-                                          "textSize": "0.875rem",
-                                          "fontStyle": "",
-                                          "enableFilter": true,
-                                          "enableSort": true,
-                                          "isVisible": true,
-                                          "isDisabled": false,
-                                          "isCellEditable": false,
-                                          "isEditable": false,
-                                          "isCellVisible": true,
-                                          "isDerived": false,
-                                          "label": "Amount",
-                                          "isSaveVisible": true,
-                                          "isDiscardVisible": true,
-                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Amount\"]))}}",
-                                          "validation": {},
-                                          "cellBackground": ""
-                                        },
-                                        "Merchant_Name": {
+                                        "count": {
                                           "allowCellWrapping": false,
                                           "index": 2,
                                           "width": 150,
-                                          "originalId": "Merchant Name",
-                                          "id": "Merchant_Name",
-                                          "alias": "Merchant Name",
+                                          "originalId": "count",
+                                          "id": "count",
+                                          "alias": "count",
                                           "horizontalAlignment": "LEFT",
                                           "verticalAlignment": "CENTER",
-                                          "columnType": "text",
+                                          "columnType": "number",
+                                          "textColor": "",
                                           "textSize": "0.875rem",
+                                          "fontStyle": "",
                                           "enableFilter": true,
                                           "enableSort": true,
                                           "isVisible": true,
@@ -5470,11 +5476,40 @@
                                           "isEditable": false,
                                           "isCellVisible": true,
                                           "isDerived": false,
-                                          "label": "Merchant Name",
+                                          "label": "count",
                                           "isSaveVisible": true,
                                           "isDiscardVisible": true,
-                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Merchant Name\"]))}}",
-                                          "validation": {}
+                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"count\"]))}}",
+                                          "validation": {},
+                                          "cellBackground": ""
+                                        },
+                                        "amount": {
+                                          "allowCellWrapping": false,
+                                          "index": 3,
+                                          "width": 150,
+                                          "originalId": "amount",
+                                          "id": "amount",
+                                          "alias": "amount",
+                                          "horizontalAlignment": "LEFT",
+                                          "verticalAlignment": "CENTER",
+                                          "columnType": "number",
+                                          "textColor": "",
+                                          "textSize": "0.875rem",
+                                          "fontStyle": "",
+                                          "enableFilter": true,
+                                          "enableSort": true,
+                                          "isVisible": true,
+                                          "isDisabled": false,
+                                          "isCellEditable": false,
+                                          "isEditable": false,
+                                          "isCellVisible": true,
+                                          "isDerived": false,
+                                          "label": "amount",
+                                          "isSaveVisible": true,
+                                          "isDiscardVisible": true,
+                                          "computedValue": "{{merchant_wise_unrecon_data.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
+                                          "validation": {},
+                                          "cellBackground": ""
                                         }
                                       },
                                       "key": "5e834g0l2e",
