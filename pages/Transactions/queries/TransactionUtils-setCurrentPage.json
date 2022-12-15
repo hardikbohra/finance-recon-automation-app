@@ -16,7 +16,7 @@
     "pageId": "Transactions",
     "collectionId": "Transactions_TransactionUtils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "page => {\n  storeValue('page', page);\n  navigateTo(page);\n}",

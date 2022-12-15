@@ -16,7 +16,7 @@
     "pageId": "Transactions",
     "collectionId": "Transactions_TransactionUtils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "page => {\n  if (appsmith.store.page === page) return true;\n  return false;\n}",

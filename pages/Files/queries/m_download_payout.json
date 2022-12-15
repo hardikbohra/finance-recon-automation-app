@@ -7,6 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
+        "sshProxyEnabled": false,
         "url": "{{appsmith.store.api_server}}/nuclei-recon/merchant/payout/download"
       },
       "invalids": [],

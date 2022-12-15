@@ -16,7 +16,7 @@
     "pageId": "Transactions",
     "collectionId": "Transactions_TransactionUtils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  if (tbl_bank_transaction.selectedRows.filter(function (d) {\n    return d.updatable;\n  }).length != 0) {\n    bank_manual_recon.run();\n    showAlert('Received manual recon request for ' + tbl_bank_transaction.selectedRows.length + ' transactions.', 'success');\n    closeModal('b_manual_recon');\n  } else {\n    showAlert('Selected transactions are not updatable.', 'info');\n  }\n}",

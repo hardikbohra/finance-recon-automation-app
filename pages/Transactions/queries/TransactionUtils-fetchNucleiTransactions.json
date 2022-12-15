@@ -16,7 +16,7 @@
     "pageId": "Transactions",
     "collectionId": "Transactions_TransactionUtils",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "datatype => {\n  storeValue('dataType', datatype);\n  switch (Tabs1.selectedTab) {\n    case 'Bank Transactions':\n      try {\n        fetch_bank_transactions.run();\n      } catch (e) {\n        return [];\n      }\n      break;\n    case 'Nuclei Transactions':\n      try {\n        fetch_merchant_transactions.run();\n      } catch (e) {\n        return [];\n      }\n      break;\n  }\n}",
